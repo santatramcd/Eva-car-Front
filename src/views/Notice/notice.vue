@@ -36,7 +36,7 @@ const items = [
     },
     {
         title: "Certified technicians",
-        link: "Includes Engine, Transmission, Body & Rental Assistance",
+        link: "Includes Engine, Transmission",
         header: `Your trusted source for car maintenance and repairs`,
         param: `Incididunt labore dolore magna aliqua enim veniam quis
                         nostrud mini exercitation ullamco laboris nisiut aliquip
