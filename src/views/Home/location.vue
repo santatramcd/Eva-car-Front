@@ -131,4 +131,11 @@ const head = ref(
     margin-top: 2px;
     border: 3px solid #bd162d;
 }
+@media (max-width: 990px) {
+    .div-loc {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+}
+}
 </style>
