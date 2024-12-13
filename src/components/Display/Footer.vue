@@ -16,19 +16,19 @@
                 <span class="spn"></span>
             </div>
             <div class="container division">
-                <div><a href="#"><router-link class="nav-link" to="/"
+                <div><a href="#"><router-link class="nav-link mobil-a" to="/"
                                 >CAR RENTAL SEYCHELLES</router-link
                             ></a></div>
-                <div><a href="#"><router-link class="nav-link" to="/about"
+                <div><a href="#"><router-link class="nav-link mobil-a" to="/about"
                                 >CARS AND PRICES</router-link
                             ></a></div>
-                <div><a href="#"><router-link class="nav-link" to="/work"
+                <div><a href="#"><router-link class="nav-link mobil-a" to="/work"
                                 >FAQ</router-link
                             ></a></div>
-                <div><a href="#"><router-link class="nav-link" to="/notice"
+                <div><a href="#"><router-link class="nav-link mobil-a" to="/notice"
                                 >TERMS AND LEGAL NOTICE</router-link
                             ></a></div>
-                <div><a href="#"><router-link class="nav-link" to="/contact"
+                <div><a href="#"><router-link class="nav-link mobil-a" to="/contact"
                                 >CONTACT US</router-link
                             ></a></div>
             </div>
@@ -83,5 +83,13 @@ a {
     display: flex;
     gap: 20px;
     justify-content: center;
+}
+
+@media (max-width: 450px) {
+ .mobil-a{
+    text-decoration: none;
+    color: #fff;
+    min-width: 325px;
+ }
 }
 </style>

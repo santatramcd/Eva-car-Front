@@ -27,7 +27,7 @@
 </template>
 <style scoped>
 .div-header {
-  background-image: url("../../../public/image//car.jpg") !important;
+  background-image: url("/public/image/car.jpg") !important;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
