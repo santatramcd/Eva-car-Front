@@ -1,9 +1,9 @@
 <template>
   <div>
     <div class="container divcont">
-      <div class="row g-3">
+      <div class="division-grid">
         <div
-          class="col-md-2 col-sm-4"
+          class="card"
           v-for="(item, index) in features"
           :key="index"
         >
@@ -51,5 +51,14 @@ h1 i {
   font-size: 4rem;
   /* color: #fff; */
   color: #ffbf00;
+}
+.division-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-auto-flow: row;
+  gap: 20px;
+}
+.card{
+    border: none;
 }
 </style>

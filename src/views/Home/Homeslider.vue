@@ -2,7 +2,7 @@
   <div>
       <div class="container cont-form-head">
           <div class="div-form">
-              <h1 class="tit-form">Search Vehicle Inventory</h1>
+              <p class="tit-form">Fill out this form to find out about our car rental offers</p>
               <form action="" class="form-head-search">
                   <div class="row">
                       <div class="col-lg-2 mt-2">
@@ -83,11 +83,11 @@
 </template>
 <style scoped>
 .tit-form {
-  text-align: center;
+  /* text-align: center; */
   color: #333;
   /* margin-bottom: 20px; */
-  font-size: 35px;
-  font-weight: bold;
+  font-size: 22px;
+  font-weight: 500;
 }
 .form-head-search select,
 .form-head-search input,

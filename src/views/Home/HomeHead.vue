@@ -36,6 +36,7 @@
   display: flex;
   margin: 25px 0;
   justify-content: flex-start;
+  align-content: center;
   flex-wrap: wrap;
   color: #fff;
 }
