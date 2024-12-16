@@ -127,7 +127,7 @@ button {
   padding: 10px 40px;
   border: none;
   font-weight: bold;
-  background-color: #bd162d;
+  background-color: #ffbf00;
   color: #fff;
 }
 /*  */
@@ -145,7 +145,7 @@ button {
   left: 85%;
   width: 15%;
   height: 100%;
-  background-color: #bd162d;
+  background-color: #ffbf00;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -6,16 +6,10 @@
                   <div class="row">
                       <div class="col-lg-6 p-0">
                           <div class="title-head">
-                              <h1>Dreams Come True</h1>
+                              <h1>Welcome to Eva Car Rental Seychelles</h1>
                               <p>
-                                  Buy Your Dream Car Today Starting From
-                                  $2,000
+                                Please fill in this form to see our cars, prices and availability
                               </p>
-                              <button>
-                                  <router-link class="nav-link col-white" to="/about"
-                                      >SEARCH CARS</router-link
-                                  >
-                              </button>
                           </div>
                       </div>
                       <div class="col-lg-6"></div>
@@ -48,19 +42,10 @@
 
 .title-head h1 {
   text-transform: capitalize;
-  font-size: 64px;
+  font-size: 50px;
 }
 .title-head p {
   font-size: 32px;
-}
-button {
-  padding: 10px 40px;
-  border: none;
-  font-weight: bold;
-  background-color: #bd162d;
-  color: #fff;
-  /* margin-top: 30px; */
-  margin-bottom: 10px;
 }
 @media (max-width: 765px) {
   .title-head h1 {

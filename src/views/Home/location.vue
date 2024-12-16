@@ -1,138 +1,94 @@
 <template>
-  <div class="div-col">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <h1>{{ text }}</h1>
-          <img
-            class="img-anime"
-            src="https://avada.website/car-dealership/wp-content/uploads/sites/165/2021/12/heading-separator.png"
-            alt=""
-          />
-        </div>
-        <div class="col-lg-6">
-          <p class="param-prod">{{ param }}</p>
-        </div>
-        <div class="col-lg-6 mar-tp-loc">
-          <h2 class="head2">{{ head }}</h2>
-          <div class="divis-h">
-            <div class="div-sp">
-              <div class="div-loc">
-                <div v-for="(item, index) in items" :key="index" class="div-sp">
-                  <span class="span-h"></span>
-                  <p>{{ item.text }}</p>
-                </div>
-              </div>
-            </div>
+  <div class="div-margin">
+    <div class="div-back">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>
+              Lorem ipsum, dolor sit amet
+            </p>
           </div>
-        </div>
-        <div class="col-lg-6 mar-tp-loc maclass">
-          <div class="division-loc-img">
-            <img src="../../../public/image/photos.png" alt="" srcset="" />
+          <div class="col-lg-6 div-cent">
+            <div class="divisionseardate">
+              <input
+                type="email"
+                class="formcont"
+                placeholder="Enter Your Email Address"
+              />
+              <button class="spandate">SEND</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </template>
-<script setup>
-import { ref } from "vue";
-const items = [
-  { text: "Victoria" },
-  { text: "Beau Vallon" },
-  { text: "Anse Boileau" },
-  { text: "Takamaka" },
-  { text: "Cascade" },
-  { text: "Anse Royale" },
-  { text: "Grand'Anse" },
-  { text: "Baie Sainte Anne" },
-  { text: "La Passe" },
-  { text: "Anse Volbert" },
-  { text: "Port Glaud" },
-  { text: "Bel Ombre" },
-  { text: "Mont Fleuri" },
-  { text: "Glacis" },
-  { text: "Au Cap" },
-  { text: "Anse Aux Pins" },
-  { text: "Bel Air" },
-];
-
-const text = ref("Latest Inventory");
-const param = ref(`Incididunt labore dolore magna aliqua enim veniam quis
-                        nostrud tempor tempor adispecing miny exercitation
-                        ullamco laboris nisiut.`);
-const head = ref(
-  `450+ Dealer Locations Across Seychelles. Locate Your Nearest Dealer.`
-);
-</script>
+<script setup></script>
 <style scoped>
-.div-col {
+.div-margin{
   margin-top: 80px;
 }
-.param-prod {
-  font-size: 20px;
-  text-align: justify;
+.div-back {
+  background-color: #ffbf00;
+  padding: 80px 0;
 }
-.img-anime {
+.divisionseardate {
+  position: relative;
+  margin: 15px 0px;
+  top: -15px;
+  bottom: 0px;
+}
+.spandate {
+  font-size: 1rem;
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 80%;
   width: 20%;
-}
-.title-item {
-  font-size: 25px;
-  font-weight: bolder;
-}
-.division-loc-img {
+  height: 100%;
+  background-color: red;
   display: flex;
+  align-items: center;
   justify-content: center;
-  align-content: center;
-  flex-wrap: wrap;
+  color: #fff;
+  border: none;
 }
-.division-loc-img img {
-  width: 50%;
+input {
+  outline: none;
+  border: none;
 }
-.div-loc {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+.formcont {
+  /* border-radius: 8px; */
+  height: 50px;
+  width: 100%;
+  padding: 10px;
 }
-.head2 {
-  font-size: 26px;
-  padding: 20px 0;
+.formcont::-webkit-calendar-picker-indicator {
+  position: absolute;
+  z-index: 20;
+  cursor: pointer;
+  /* left: 15px; */
+  /* font-size: 3rem; */
+  opacity: 0;
+  width: 100%;
 }
-.divis-h {
-  margin-top: 20px;
-}
-.mar-tp-loc {
-  margin-top: 80px;
-}
-.maclass {
+.div-cent {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.div-sp {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  min-width: 160px;
+h1 {
+  font-size: 30px;
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
 }
-.span-h {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  display: block;
-  margin-top: 2px;
-  border: 3px solid #bd162d;
-}
-@media (max-width: 990px) {
-  .div-loc {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0px !important;
-  }
-  .div-sp {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px !important;
-  }
+p {
+  color: #716d6e;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.1em;
 }
 </style>

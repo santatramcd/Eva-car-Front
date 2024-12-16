@@ -3,11 +3,12 @@
     <HomeHead />
     <Homeslider/>
     <HomeDiv />
-    <HomeCar/>
-    <HomeTech/>
+    <!-- <HomeCar/> -->
+    <!-- <HomeTech/> -->
+    <!-- <Home/> -->
+    <!-- <Homelocat /> -->
     <Homeproduct />
-    <Home/>
-    <Homelocat />
+    <!-- <Homemarque/> -->
   </div>
 </template>
 <script setup>
@@ -18,7 +19,8 @@ import Homeslider from './Homeslider.vue';
 import Homeproduct from "../Home/produit5.vue";
 import Home from "../Home/Home6.vue";
 import Homelocat from "../Home/location.vue";
-import HomeCar from "../Home/HomeCar7.vue"
+import HomeCar from "../Home/HomeCar7.vue";
+import Homemarque from "../Home/Homemarque.vue";
 AOS.init({
   offset: 400,
   duration: 1000,
