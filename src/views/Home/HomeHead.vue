@@ -1,22 +1,22 @@
 <template>
   <div>
-      <div class="div-header">
-          <div>
-              <div class="container">
-                  <div class="row">
-                      <div class="col-lg-6 p-0">
-                          <div class="title-head">
-                              <h1>Bienvenue chez Eva Car Rental Seychelles</h1>
-                              <p>
-                                Veuillez remplir ce formulaire pour voir nos voitures, les prix et la disponibilité
-                              </p>
-                          </div>
-                      </div>
-                      <div class="col-lg-6"></div>
-                  </div>
+    <div class="div-header">
+      <div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 p-0">
+              <div class="title-head">
+                <h1>Bienvenue chez Eva Car Rental Seychelles</h1>
+                <p>
+                  Veuillez remplir ce formulaire pour voir nos voitures
+                </p>
               </div>
+            </div>
+            <div class="col-lg-6"></div>
           </div>
+        </div>
       </div>
+    </div>
   </div>
 </template>
 <style scoped>
@@ -50,10 +50,10 @@
 }
 @media (max-width: 765px) {
   .title-head h1 {
-      font-size: 40px;
+    font-size: 40px;
   }
   .title-head p {
-      font-size: 27px;
+    font-size: 27px;
   }
 }
 </style>
