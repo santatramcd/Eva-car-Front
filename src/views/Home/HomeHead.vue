@@ -6,9 +6,9 @@
                   <div class="row">
                       <div class="col-lg-6 p-0">
                           <div class="title-head">
-                              <h1>Welcome to Eva Car Rental Seychelles</h1>
+                              <h1>Bienvenue chez Eva Car Rental Seychelles</h1>
                               <p>
-                                Please fill in this form to see our cars, prices and availability
+                                Veuillez remplir ce formulaire pour voir nos voitures, les prix et la disponibilité
                               </p>
                           </div>
                       </div>

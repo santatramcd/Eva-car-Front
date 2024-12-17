@@ -4,14 +4,12 @@
       <div class="row">
         <div class="col-lg-6 div-cent">
           <div class="card mt-5">
-            <h2>Quality Guaranteed</h2>
+            <h2>Lorem, ipsum.</h2>
             <h6>
-              Here is an example with one single photo displayed on the right.
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, nulla!
             </h6>
             <p class="param-right">
-              Here is some dummy text. Hover over me! This is an demo tooltip!
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde,
-              vero voluptas delectus explicabo maxime ad qui incidunt! Saepe.
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta eaque, reprehenderit repellendus dolore dignissimos officia adipisci tempora, asperiores, vero atque quibusdam ipsa iusto qui nemo hic excepturi eveniet earum mollitia.
             </p>
           </div>
         </div>

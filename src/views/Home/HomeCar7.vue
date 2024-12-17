@@ -1,8 +1,8 @@
 <template>
   <div class="div-mar-tp">
     <div class="text-center">
-      <h1 class="head-car">Customer Services</h1>
-      <p class="param">Best customer service in the world</p>
+      <h1 class="head-car">Lorem, ipsum.</h1>
+      <p class="param">Lorem ipsum dolor sit amet.</p>
       <span class="span-hr"></span>
     </div>
     <!--  -->
@@ -28,25 +28,25 @@
 const features = [
   {
     icon: "bi bi-wrench-adjustable",
-    title: "Special rates on car",
+    title: "Lorem ipsum.",
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, minus cum, sapiente dolorum adipisci qui beatae praesentium velit sit nostrum provident aspernatur dicta cumque molestias veniam assumenda a. Nam, culpa.",
   },
   {
     icon: "bi bi-gift",
-    title: "Mobile Phone",
+    title: "Lorem ipsum.",
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, minus cum, sapiente dolorum adipisci qui beatae praesentium velit sit nostrum provident aspernatur dicta cumque molestias veniam assumenda a. Nam, culpa.",
   },
   {
     icon: "bi bi-send-fill",
-    title: "Unlimited Miles",
+    title: "Lorem ipsum.",
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, minus cum, sapiente dolorum adipisci qui beatae praesentium velit sit nostrum provident aspernatur dicta cumque molestias veniam assumenda a. Nam, culpa.",
   },
   {
     icon: "bi bi-bus-front",
-    title: "One Way Car",
+    title: "Lorem ipsum.",
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, minus cum, sapiente dolorum adipisci qui beatae praesentium velit sit nostrum provident aspernatur dicta cumque molestias veniam assumenda a. Nam, culpa.",
   },

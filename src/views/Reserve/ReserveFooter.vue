@@ -27,7 +27,7 @@ const returnBtn = () => {
 </script>
 <style scoped>
 .btnvalidation {
-  background-color: #bd162d;
+  background-color: #ffbf00;
   color: #fff;
   border: none;
   padding: 15px 30px;
@@ -37,7 +37,7 @@ const returnBtn = () => {
 }
 
 .btnvalidation:hover {
-  background-color: #bd162d;
+  background-color: #ffbf00;
 }
 
 .parambtnval {

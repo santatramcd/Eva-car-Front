@@ -2,8 +2,8 @@
   <div class="div-col">
     <div class="container">
       <div class="text-center">
-        <h1 class="head-car">Customer Services</h1>
-        <p class="param">Best customer service in the world</p>
+        <h1 class="head-car">Lorem, ipsum.</h1>
+        <p class="param">Lorem ipsum dolor sit amet.</p>
         <span class="span-hr"></span>
       </div>
     </div>
@@ -25,7 +25,7 @@
                 <span class="span-hr-auto"></span>
                 <div>
                   <p>
-                    Price :
+                    Price <span>5 days</span> :
                     <span class="prom-price">€220.00</span>
                     <span class="span-price">
                       {{ item.price }}
@@ -118,7 +118,7 @@ const filteredData = ref(data.value);
 .span-hr-auto {
   width: 80%;
   height: 1px;
-  background-color: 716d6e;
+  background-color: #716d6e;
   display: inline-block;
   margin: 10px 0;
 }

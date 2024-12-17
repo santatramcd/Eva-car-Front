@@ -1,42 +1,38 @@
 <template>
   <div class="div-margin">
     <div class="text-center">
-      <h1 class="head-car">Customer Services</h1>
-      <p class="param">Best customer service in the world</p>
+      <h1 class="head-car">Lorem, ipsum.</h1>
+      <p class="param">Lorem ipsum dolor sit amet.</p>
       <span class="span-hr"></span>
     </div>
     <div class="container mt-5">
       <div class="division-grid">
         <div class="card">
           <span class="span-icone"><i class="bi bi-browser-safari"></i></span>
-          <h6>One-Way Rentals</h6>
+          <h6>Lorem, ipsum.</h6>
           <p>
-            Experience hassle-free rentals, premium services, and a wide
-            selection of vehicles.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In, non.
           </p>
         </div>
         <div class="card">
           <span class="span-icone"><i class="bi bi-car-front"></i></span>
-          <h6>Airport Transfers</h6>
+          <h6>Lorem, ipsum.</h6>
           <p>
-            Experience hassle-free rentals, premium services, and a wide
-            selection of vehicles.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In, non.
           </p>
         </div>
         <div class="card">
           <span class="span-icone"><i class="bi bi-person"></i></span>
-          <h6>Corporate Rentals</h6>
+          <h6>Lorem, ipsum.</h6>
           <p>
-            Experience hassle-free rentals, premium services, and a wide
-            selection of vehicles.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In, non.
           </p>
         </div>
         <div class="card">
           <span class="span-icone"><i class="bi bi-taxi-front-fill"></i></span>
-          <h6>Chauffeur Service</h6>
+          <h6>Lorem, ipsum.</h6>
           <p>
-            Experience hassle-free rentals, premium services, and a wide
-            selection of vehicles.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In, non.
           </p>
         </div>
       </div>
