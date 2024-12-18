@@ -3,7 +3,7 @@
     <HomeHead />
     <Homeslider />
     <HomeDiv />
-    <!-- <HomeCar /> -->
+    <HomeCar />
     <!-- <Home /> -->
     <!-- <HomeTech /> -->
     <!-- <Homelocat /> -->
