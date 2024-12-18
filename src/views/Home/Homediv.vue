@@ -30,7 +30,7 @@ const features = [
 
 <style scoped>
 .divcont {
-  padding-top: 80px;
+  padding-top: 100px;
 }
 .row {
   align-items: stretch;

@@ -27,7 +27,7 @@
 <script setup></script>
 <style scoped>
 .div-margin{
-  margin-top: 80px;
+  margin-top: 100px;
 }
 .div-back {
   background-color: #ffbf00;

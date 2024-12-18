@@ -86,7 +86,7 @@ const filteredData = ref(data.value);
 </script>
 <style scoped>
 .div-col {
-  margin-top: 80px;
+  margin-top: 100px;
 }
 .param-prod {
   font-size: 20px;
