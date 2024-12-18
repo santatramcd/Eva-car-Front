@@ -1,7 +1,7 @@
 <template>
   <div class="div-mar-tp">
     <div class="text-center">
-      <h1 class="head-car">Lorem, ipsum.</h1>
+      <h1 class="head-car">Les plus de notre service</h1>
       <p class="param">Lorem ipsum dolor sit amet.</p>
       <span class="span-hr"></span>
     </div>

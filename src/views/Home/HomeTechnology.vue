@@ -4,9 +4,9 @@
       <div class="row">
         <div class="col-lg-6 div-cent">
           <div class="card mt-5">
-            <h2>Lorem, ipsum.</h2>
+            <h2>L'Excellence au Volant</h2>
             <h6>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, nulla!
+              Des Voitures de Qualité Supérieure pour Chaque Trajet
             </h6>
             <p class="param-right">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta eaque, reprehenderit repellendus dolore dignissimos officia adipisci tempora, asperiores, vero atque quibusdam ipsa iusto qui nemo hic excepturi eveniet earum mollitia.
