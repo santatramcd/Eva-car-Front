@@ -5,10 +5,10 @@
     <HomeDiv />
     <HomeCar />
     <!-- <Home /> -->
-    <!-- <HomeTech /> -->
+    <HomeTech />
     <!-- <Homelocat /> -->
     <Homeproduct />
-    <!-- <Homemarque /> -->
+    <Homemarque />
   </div>
 </template>
 <script setup>
