@@ -2,7 +2,7 @@
   <div class="div-col">
     <div class="container">
       <div class="text-center">
-        <h1 class="head-car">Lorem, ipsum.</h1>
+        <h1 class="head-car">Tarif à la semaine</h1>
         <p class="param">Lorem ipsum dolor sit amet.</p>
         <span class="span-hr"></span>
       </div>
