@@ -1,6 +1,6 @@
 <template>
   <div class="div-mar-tp">
-    <div class="text-center">
+    <div class="container text-center">
       <h1 class="head-car">Les plus de notre service</h1>
       <p class="param">Lorem ipsum dolor sit amet.</p>
       <span class="span-hr"></span>
