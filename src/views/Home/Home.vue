@@ -4,9 +4,9 @@
     <Homeslider />
     <HomeDiv />
     <HomeCar />
-    <!-- <Home /> -->
+    <Home />
     <HomeTech />
-    <!-- <Homelocat /> -->
+    <Homelocat />
     <Homeproduct />
     <Homemarque />
   </div>
