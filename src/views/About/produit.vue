@@ -170,7 +170,7 @@ const handleClick = () => {
 
 .containToas {
   background-color: #6dace6;
-  margin-bottom: 20px;
+  margin-top: 20px;
   position: relative;
   padding:0 30px;
 }
