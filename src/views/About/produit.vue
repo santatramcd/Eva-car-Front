@@ -171,13 +171,16 @@ const handleClick = () => {
 .containToas {
   background-color: #6dace6;
   margin-bottom: 20px;
+  position: relative;
+  padding:0 30px;
 }
 .spanToasts {
-  /* background-color: chartreuse; */
+  /* background-color: red; */
   font-size: 2em;
-  padding-right: 10px;
+  /* padding-right: 10px; */
   color: #fff;
-  margin: 0px;
+  left: 5px;
+  position: absolute;
 }
 .paraToas {
   /* background-color: aqua; */
@@ -188,10 +191,11 @@ const handleClick = () => {
 }
 .icnX {
   font-size: 1.5rem;
-  /* background-color: #899e27; */
-  margin-top: -15px;
+  /* background-color: red; */
   cursor: pointer;
-  padding: 5px;
   color: #fff;
+  position: absolute;
+  right: 5px;
+  top: 0;
 }
 </style>
