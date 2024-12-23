@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-4 card div-filt-cat">
-          <!-- <Categories /> -->
+          <Categories />
         </div>
 
         <div class="col-lg-8 card">
@@ -142,7 +142,7 @@ const handleClick = () => {
   margin-top: 60px;
 }
 .span-hr {
-  width: 60%;
+  width: 65%;
   height: 1px;
   background-color: #c9c9c9;
   display: inline-block;

@@ -376,7 +376,7 @@
       </div>
       <div class="p-3 mt-3 divi2">
         <h1 class="horH1">Horaires d'ouverture de l'agence de location</h1>
-        <p class="horP">Rolland Garros International Airport (RUN)</p>
+        <p class="horP">Lorem ipsum dolor sit amet (RUN)</p>
         <p class="horP">
           <span class="spanjrs">Lu:</span>
           <span class="spanheures">06:30 – 21:00</span>

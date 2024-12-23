@@ -118,7 +118,7 @@ const filteredData = ref(data.value);
 .span-hr-auto {
   width: 80%;
   height: 1px;
-  background-color: #716d6e;
+  background-color: #c9c9c9;
   display: inline-block;
   margin: 10px 0;
 }
