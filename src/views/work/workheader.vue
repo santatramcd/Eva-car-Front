@@ -2,7 +2,7 @@
   <div class="divi">
       <div class="head">
           <div class="container">
-              <h1 class="h1-about">FAQ</h1>
+              <h1 class="h1-about">Foire aux questions</h1>
           </div>
       </div>
   </div>
@@ -19,7 +19,7 @@
   padding: 80px 0;
 }
 .h1-about{
-  font-size: 50px;
+  font-size: 40px;
   color: #fff;
   text-align: center;
   /* opacity: 0.5; */

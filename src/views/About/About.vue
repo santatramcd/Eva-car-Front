@@ -1,7 +1,7 @@
 <template>
   <div>
     <AboutHead />
-    <!-- <HomeSlider/> -->
+    <HomeSlider/>
     <Produit />
     <Homediv/>
 

@@ -4,34 +4,32 @@
       <div class="row">
         <div class="col-lg-4 card div-filt-cat">
           <!-- <Categories /> -->
-          <p>Categories</p>
-          <hr>
         </div>
 
         <div class="col-lg-8 card">
           <div class="container containToas">
-        <div
-          role="alert"
-          aria-live="assertive"
-          aria-atomic="true"
-          v-show="isVisible"
-        >
-          <div class="toast-body d-flex">
-            <span class="spanToasts"
-              ><i class="bi bi-exclamation-circle"></i
-            ></span>
-            <p class="paraToas">
-              L'offre qui s'affiche est un exemple de réservation sur les
-              prochains 5 jours. Pour avoir une offre adaptée, veuillez remplir
-              le formulaire adjacent, et cliquez sur le bouton 'Afficher les
-              offres'
-            </p>
-            <span class="icnX"
-              ><i class="bi bi-x" @click="handleClick"></i
-            ></span>
+            <div
+              role="alert"
+              aria-live="assertive"
+              aria-atomic="true"
+              v-show="isVisible"
+            >
+              <div class="toast-body d-flex">
+                <span class="spanToasts"
+                  ><i class="bi bi-exclamation-circle"></i
+                ></span>
+                <p class="paraToas">
+                  L'offre qui s'affiche est un exemple de réservation sur les
+                  prochains 5 jours. Pour avoir une offre adaptée, veuillez
+                  remplir le formulaire adjacent, et cliquez sur le bouton
+                  'Afficher les offres'
+                </p>
+                <span class="icnX"
+                  ><i class="bi bi-x" @click="handleClick"></i
+                ></span>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
           <div class="row">
             <div
               class="col-lg-6 card div-hover mt-5"
@@ -155,9 +153,6 @@ const handleClick = () => {
   color: #ffbf00;
   font-weight: 600;
 }
-
-
-
 
 .btn-reserve {
   width: 50%;
