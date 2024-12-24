@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="container mt-5">
-      <div class="row">
+      <div class="row division-position">
         <div class="col-md-4">
           <div class="divsearch">
             <h3 class="search-title">Recherche dans notre FAQ</h3>
@@ -51,6 +51,10 @@
                 ><i class="bi bi-x" @click="handleClick"></i
               ></span>
             </div>
+          </div>
+
+          <div class="res-position">
+
           </div>
 
           <div
@@ -111,28 +115,28 @@ const dataAuto = [
   },
   {
     title: "Les règles de circulation routière",
-    message: `2 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+    message: `3 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
                   eum debitis ab! Dolorum, illum unde amet animi quasi eaque rerum.
                   Ipsum eius excepturi harum placeat qui obcaecati rem inventore
                   soluta.`,
   },
   {
     title: "L'option premium, c'est quoi exactement ?",
-    message: `1 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+    message: `4 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
                   eum debitis ab! Dolorum, illum unde amet animi quasi eaque rerum.
                   Ipsum eius excepturi harum placeat qui obcaecati rem inventore
                   soluta.`,
   },
   {
     title: " Quelles sont les conditions d'annulation ?",
-    message: `2 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+    message: `5 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
                   eum debitis ab! Dolorum, illum unde amet animi quasi eaque rerum.
                   Ipsum eius excepturi harum placeat qui obcaecati rem inventore
                   soluta.`,
   },
   {
     title: "Dois-je verser un dépôt de garantie ?",
-    message: `2 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+    message: `6 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
                   eum debitis ab! Dolorum, illum unde amet animi quasi eaque rerum.
                   Ipsum eius excepturi harum placeat qui obcaecati rem inventore
                   soluta.`,
@@ -290,6 +294,33 @@ li {
 .bi-chevron-up {
   //   transition: transform 0.5s ease;
   cursor: pointer;
+}
+.division-position {
+  position: relative;
+  // background-color: red;
+}
+.res-position{
+  height: 160px;
+  // background-color: red;
+  display: none;
+}
+@media (max-width: 768px) {
+  .ulsearch {
+    display: none;
+  }
+  .res-position {
+    display: flex;
+  }
+  .divsearch {
+    position: absolute;
+    top: 185px;
+    width: 95%;
+    margin-bottom: 100px;
+    // background: red;
+  }
+  .div3{
+    display: none;
+  }
 }
 
 @media (max-width: 376px) {

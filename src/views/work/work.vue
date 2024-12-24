@@ -1,7 +1,7 @@
 <template>
   <div>
     <Workheader />
-    <!-- <Faq/> -->
+    <Faq/>
   </div>
 </template>
 
