@@ -45,8 +45,8 @@
               </li>
               <li class="mb-2">
                 <a href="#"
-                  ><router-link class="route-a" to="/notice"
-                    >TERMS AND LEGAL NOTICE</router-link
+                  ><router-link class="route-a" to="/cgv"
+                    >CGV et mentions légales</router-link
                   ></a
                 >
               </li>

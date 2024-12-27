@@ -3,7 +3,7 @@ import Home from '../views/Home/Home.vue'
 import About from '../views/About/About.vue'
 import Work from '../views/work/work.vue'
 import Contact from '../views/contact/contact.vue'
-import Notice from '../views/Notice/notice.vue'
+import Cgv from '../views/Notice/Cgv.vue'
 import Reserve from '../views/Reserve/Reserve.vue'
 
 const routes = [
@@ -28,9 +28,9 @@ const routes = [
         component: Contact
     },
     {
-        path: '/notice',
-        name: 'notice',
-        component: Notice
+        path: '/cgv',
+        name: 'cgv',
+        component: Cgv
     },
     {
         path: '/reserve',

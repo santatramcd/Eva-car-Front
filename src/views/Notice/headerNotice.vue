@@ -2,7 +2,7 @@
     <div class="divi">
         <div class="head">
             <div class="container">
-                <h1 class="h1-about">Terms And Legal Notice</h1>
+                <h1 class="h1-about">CGV et mentions légales</h1>
             </div>
         </div>
     </div>
@@ -22,5 +22,6 @@
     font-size: 50px;
     color: #fff;
     text-align: center;
+    text-transform: uppercase;
 }
 </style>

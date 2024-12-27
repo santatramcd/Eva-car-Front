@@ -34,8 +34,8 @@
               <a class="nav-link" href="#" @click="work">FAQ</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" @click="notice"
-                >TERMS AND LEGAL NOTICE</a
+              <a class="nav-link" href="#" @click="cgv"
+                >CGV et mentions légales</a
               >
             </li>
             <li class="nav-item">
@@ -64,8 +64,8 @@ const work = () => {
 const contact = async () => {
   router.push("/contact");
 };
-const notice = async () => {
-  router.push("/notice");
+const cgv = async () => {
+  router.push("/cgv");
 };
 
 import { ref } from "vue";
@@ -108,6 +108,9 @@ img{
 }
 .navbar-toggler i {
     font-size: 35px;
+}
+.nav-link{
+  text-transform: uppercase;
 }
 @media (max-width: 1063px) {
     .navbar-nav {
