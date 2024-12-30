@@ -92,7 +92,7 @@ function toggleButtonText() {
     justify-content: space-around !important;
 }
 img{
-  width: 100%;
+  width: 80%;
 }
 .navbar-brand {
     width: 20% !important;
