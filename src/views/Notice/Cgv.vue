@@ -1,8 +1,8 @@
 <template>
   <div class="header">
     <HeaderNotice/>
-    <!-- <CgvContact/> -->
-    <!-- <Cgvdiv/> -->
+    <CgvContact/>
+    <Cgvdiv/>
   </div>
 </template>
 <script setup>
