@@ -2,11 +2,11 @@
   <div>
     <nav
       class="navbar navbar-expand-lg navbar-light"
-      style="background-color: #fff"
+      style="background-color: #fff; "
     >
       <div class="container-fluid cont-padd">
         <a class="navbar-brand" href="#" @click="home"
-          ><img src="../../../public/image/logo.png" alt="logo"></a
+          ><img src="../../../public/image/logo-black.png" alt="logo"></a
         >
         <button
           class="navbar-toggler"

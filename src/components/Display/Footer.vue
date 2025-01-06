@@ -9,7 +9,7 @@
               href="/"
               aria-label="Bootstrap"
             >
-              <img src="../../../public/image/logo.png" alt="logo" />
+              <img src="../../../public/image/logo-white.png" alt="logo" />
             </a>
             <ul class="list-unstyled small text-muted">
               <li class="mb-2 text-justify">
@@ -119,7 +119,7 @@
 <script setup></script>
 <style scoped>
 img {
-  width: 160px;
+  width: 90px;
 }
 li,
 a {
