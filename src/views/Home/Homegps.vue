@@ -194,5 +194,8 @@ img {
   .colonne1 {
     padding: 40px 0px;
   }
+  .carousel-indicators{
+    bottom: -10px;
+  }
 }
 </style>

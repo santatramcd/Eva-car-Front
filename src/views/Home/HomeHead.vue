@@ -6,10 +6,8 @@
           <div class="row">
             <div class="col-lg-6 p-0">
               <div class="title-head">
-                <h1>Bienvenue chez Eva Car Rental Seychelles</h1>
-                <p>
-                  Veuillez remplir ce formulaire pour voir nos voitures
-                </p>
+                <h1>{{ $t("welcome") }}</h1>
+                <p>{{ $t("remplir") }}</p>
               </div>
             </div>
             <div class="col-lg-6"></div>
@@ -58,7 +56,7 @@
 }
 @media (max-width: 375px) {
   .title-head {
-  margin: 10px 0;
-}
+    margin: 10px 0;
+  }
 }
 </style>
