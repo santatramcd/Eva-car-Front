@@ -188,10 +188,8 @@ function toggleButtonText() {
   .logo {
     width: 165px;
   }
-}
-@media (max-width: 380px) {
   .langage {
-    // display: flex;
+    display: flex;
     justify-content: center;
   }
   .div-langage {
