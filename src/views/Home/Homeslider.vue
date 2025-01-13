@@ -6,7 +6,7 @@
               <form action="" class="form-head-search">
                   <div class="row">
                       <div class="col-lg-2 mt-2">
-                          <label>LIEU DE DÉPART</label>
+                          <label>{{$t("lieudep")}}</label>
                           <div class="divisionseardate">
                               <select
                                   class="select"
@@ -25,7 +25,7 @@
                           </div>
                       </div>
                       <div class="col-lg-2 mt-2">
-                          <label>LIEU DE RETOUR</label>
+                          <label>{{$t("lieuret")}}</label>
                           <div class="divisionseardate">
                               <select
                                   class="select"
@@ -44,7 +44,7 @@
                           </div>
                       </div>
                       <div class="col-lg-3 mt-2">
-                          <label>DATE ET HEURE DE DÉPART</label>
+                          <label>{{$t("dateheuredep")}}</label>
                           <div class="divisionseardate">
                               <input
                                   type="datetime-local"
@@ -57,7 +57,7 @@
                           </div>
                       </div>
                       <div class="col-lg-3 mt-2">
-                          <label>DATE ET HEURE DE RETOUR</label>
+                          <label>{{$t("dateheureret")}}</label>
                           <div class="divisionseardate">
                               <input
                                   type="datetime-local"
@@ -72,7 +72,7 @@
                       <div class="col-lg-2 mt-2">
                           <label class="lab-sear">search</label>
                           <button><router-link class="nav-link col-white" to="/about"
-                                      >SEARCH</router-link
+                                      >{{$t("search")}}</router-link
                                   ></button>
                       </div>
                   </div>

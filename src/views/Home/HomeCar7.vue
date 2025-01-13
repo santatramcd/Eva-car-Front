@@ -1,21 +1,69 @@
 <template>
   <div class="div-mar-tp">
     <div class="container text-center">
-      <h1 class="head-car">Les plus de notre service</h1>
-      <p class="param">Lorem ipsum dolor sit amet.</p>
+      <h1 class="head-car">{{ $t("prqlouervoit") }}</h1>
+      <p class="param">
+        {{ $t("vousappreci") }}
+      </p>
       <span class="span-hr"></span>
     </div>
     <!--  -->
     <div class="container">
       <div class="row">
-        <div class="col-lg-6" v-for="(item, index) in features" :key="index">
+        <div class="col-lg-6">
           <div class="card-icn">
             <div class="div-flex">
-              <span class="span-icn"><i :class="item.icon"></i></span>
-              <h2 class="head-h2">{{ item.title }}</h2>
+              <span class="span-icn"
+                ><i class="bi bi-wrench-adjustable"></i
+              ></span>
+              <h2 class="head-h2">{{ $t("expfac") }}</h2>
             </div>
             <div>
-              <p class="param-icn">{{ item.description }}</p>
+              <p class="param-icn">
+                {{ $t("utilvoit") }}
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="col-lg-6">
+          <div class="card-icn">
+            <div class="div-flex">
+              <span class="span-icn"><i class="bi bi-gift"></i></span>
+              <h2 class="head-h2">{{$t("expers")}}</h2>
+            </div>
+            <div>
+              <p class="param-icn">
+                {{$t("pourexp")}}
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="col-lg-6">
+          <div class="card-icn">
+            <div class="div-flex">
+              <span class="span-icn"><i class="bi bi-send-fill"></i></span>
+              <h2 class="head-h2">{{$t("Acclieu")}}</h2>
+            </div>
+            <div>
+              <p class="param-icn">
+                {{$t("psblacc")}}
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- 4 -->
+        <div class="col-lg-6">
+          <div class="card-icn">
+            <div class="div-flex">
+              <span class="span-icn"><i class="bi bi-bus-front"></i></span>
+              <h2 class="head-h2">{{$t("transimple")}}</h2>
+            </div>
+            <div>
+              <p class="param-icn">
+                {{$t("gracevoit")}}
+              </p>
             </div>
           </div>
         </div>
@@ -24,34 +72,7 @@
     <!--  -->
   </div>
 </template>
-<script setup>
-const features = [
-  {
-    icon: "bi bi-wrench-adjustable",
-    title: "Lorem ipsum.",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, minus cum, sapiente dolorum adipisci qui beatae praesentium velit sit nostrum provident aspernatur dicta cumque molestias veniam assumenda a. Nam, culpa.",
-  },
-  {
-    icon: "bi bi-gift",
-    title: "Lorem ipsum.",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, minus cum, sapiente dolorum adipisci qui beatae praesentium velit sit nostrum provident aspernatur dicta cumque molestias veniam assumenda a. Nam, culpa.",
-  },
-  {
-    icon: "bi bi-send-fill",
-    title: "Lorem ipsum.",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, minus cum, sapiente dolorum adipisci qui beatae praesentium velit sit nostrum provident aspernatur dicta cumque molestias veniam assumenda a. Nam, culpa.",
-  },
-  {
-    icon: "bi bi-bus-front",
-    title: "Lorem ipsum.",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, minus cum, sapiente dolorum adipisci qui beatae praesentium velit sit nostrum provident aspernatur dicta cumque molestias veniam assumenda a. Nam, culpa.",
-  },
-];
-</script>
+<script setup></script>
 <style scoped>
 .div-mar-tp {
   margin-top: 80px;

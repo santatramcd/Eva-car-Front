@@ -2,14 +2,45 @@
   <div>
     <div class="container divcont">
       <div class="division-grid">
-        <div
-          class="card"
-          v-for="(item, index) in features"
-          :key="index"
-        >
+        <div class="card">
           <div class="stepBox text-center">
-            <h1><i :class="item.icon"></i></h1>
-            <p>{{ item.text }}</p>
+            <h1><i class="bi bi-shield-check"></i></h1>
+            <p>{{$t("assurrisq")}}</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="stepBox text-center">
+            <h1><i class="bi bi-truck"></i></h1>
+            <p>{{$t("livraison")}}</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="stepBox text-center">
+            <h1><i class="bi bi-geo-alt"></i></h1>
+            <p>{{$t("gpsgratuit")}}</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="stepBox text-center">
+            <h1><i class="bi bi-speedometer"></i></h1>
+            <p>{{$t("kilillimité")}}</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="stepBox text-center">
+            <h1><i class="bi bi-person-plus-fill"></i></h1>
+            <p>{{$t("conductadd")}}</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="stepBox text-center">
+            <h1><i class="bi bi-clock"></i></h1>
+            <p>{{$t("Annulation")}}</p>
           </div>
         </div>
       </div>
@@ -17,16 +48,7 @@
   </div>
 </template>
 
-<script setup>
-const features = [
-  { icon: "bi bi-shield-check", text: "Assurance tous risques" },
-  { icon: "bi bi-truck", text: "Livraison" },
-  { icon: "bi bi-geo-alt", text: "GPS gratuit" },
-  { icon: "bi bi-speedometer", text: "Kilométrage illimité" },
-  { icon: "bi bi-person-plus-fill", text: "Conducteur additionnel" },
-  { icon: "bi bi-clock", text: "Annulation" },
-];
-</script>
+<script setup></script>
 
 <style scoped>
 .divcont {
@@ -58,7 +80,7 @@ h1 i {
   grid-auto-flow: row;
   gap: 20px;
 }
-.card{
-    border: none;
+.card {
+  border: none;
 }
 </style>

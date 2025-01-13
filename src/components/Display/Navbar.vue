@@ -41,22 +41,22 @@
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" href="#" @click="home"
-                >CAR RENTAL SEYCHELLES</a
+                >{{ $t("evacar") }}</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" @click="about">CARS AND PRICES</a>
+              <a class="nav-link" href="#" @click="about">{{$t("carsprice")}}</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#" @click="work">FAQ</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#" @click="cgv"
-                >CGV et mentions légales</a
+                >{{$t("cgv")}}</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" @click="contact">CONTACT US</a>
+              <a class="nav-link" href="#" @click="contact">{{$t("contact")}}</a>
             </li>
             <li class="nav-item">
               <a class="nav-link div-langage" href="#">

@@ -36,15 +36,12 @@
               <div class="row">
                 <div class="col-md-6 colonne1">
                   <!-- Contenu de la première colonne -->
-                  <h2>Conseils locaux</h2>
+                  <h2>{{ $t("conslocaux") }}</h2>
                   <p>
-                    Malgré les avis de certains locaux et habitués affirmant
-                    qu'un GPS n'est pas nécessaire aux Seychelles, il peut
-                    néanmoins s'avérer précieux, en particulier pour les
-                    nouveaux visiteurs.
+                    {{ $t("malgréavis") }}
                   </p>
                   <button class="button" @click="VoitureBtn">
-                    Réserver maintenant
+                    {{ $t("reserve") }}
                   </button>
                 </div>
                 <div class="col-md-6 colonne1">
@@ -59,16 +56,12 @@
               <div class="row">
                 <div class="col-md-6 colonne1">
                   <!-- Contenu de la première colonne -->
-                  <h2>Utilité du GPS</h2>
+                  <h2>{{ $t("utilegps") }}</h2>
                   <p>
-                    Pour ceux découvrant les Seychelles pour la première fois,
-                    un GPS peut se révéler particulièrement utile. En effet, dès
-                    votre arrivée, disposer d'un moyen fiable de navigation peut
-                    grandement simplifier le trajet de l'aéroport jusqu'à votre
-                    lieu de séjour.
+                    {{ $t("pourdecouv") }}
                   </p>
                   <button class="button" @click="VoitureBtn">
-                    Réserver maintenant
+                    {{ $t("reserve") }}
                   </button>
                 </div>
                 <div class="col-md-6 colonne1">
@@ -83,15 +76,12 @@
               <div class="row">
                 <div class="col-md-6 colonne1">
                   <!-- Contenu de la première colonne -->
-                  <h2>Avantages</h2>
+                  <h2>{{ $t("avantage") }}</h2>
                   <p>
-                    Aux Seychelles, toutes les locations de voitures effectuées
-                    via notre site incluent un GPS gratuit. Cette inclusion
-                    offre aux voyageurs un avantage pratique pour explorer
-                    l'archipel en toute simplicité.
+                    {{ $t("seychelleloc") }}
                   </p>
                   <button class="button" @click="VoitureBtn">
-                    Réserver maintenant
+                    {{ $t("reserve") }}
                   </button>
                 </div>
                 <div class="col-md-6 colonne1">
