@@ -1,38 +1,38 @@
 <template>
   <div class="div-margin">
-    <div class="text-center">
-      <h1 class="head-car">Lorem, ipsum.</h1>
-      <p class="param">Lorem ipsum dolor sit amet.</p>
+    <div class="text-center container">
+      <h1 class="head-car">{{ $t("plusservice") }}</h1>
+      <p class="param">{{ $t("Unaccomp") }}</p>
       <span class="span-hr"></span>
     </div>
     <div class="container mt-5">
       <div class="division-grid">
         <div class="card">
-          <span class="span-icone"><i class="bi bi-browser-safari"></i></span>
-          <h6>Lorem, ipsum.</h6>
+          <span class="span-icone"><i class="bi bi-geo-alt-fill"></i></span>
+          <h6>{{ $t("gpsgratuit") }}</h6>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. In, non.
+            {{ $t("gpsoffert") }}
           </p>
         </div>
         <div class="card">
           <span class="span-icone"><i class="bi bi-car-front"></i></span>
-          <h6>Lorem, ipsum.</h6>
+          <h6>{{ $t("flexibAssur") }}</h6>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. In, non.
+            {{ $t("auccunfrais") }}
           </p>
         </div>
         <div class="card">
           <span class="span-icone"><i class="bi bi-person"></i></span>
-          <h6>Lorem, ipsum.</h6>
+          <h6>{{ $t("choixpers") }}</h6>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. In, non.
+            {{ $t("vouspouvezreserve") }}
           </p>
         </div>
         <div class="card">
           <span class="span-icone"><i class="bi bi-taxi-front-fill"></i></span>
-          <h6>Lorem, ipsum.</h6>
+          <h6>{{ $t("condsanssurp") }}</h6>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. In, non.
+            {{ $t("pasdefrais") }}
           </p>
         </div>
       </div>

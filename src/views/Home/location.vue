@@ -4,9 +4,9 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
-            <h1>Lorem ipsum dolor sit amet.</h1>
+            <h1>{{$t("livrhotel")}}</h1>
             <p>
-              Lorem ipsum, dolor sit amet
+              {{$t("Nouspouvonslivrer")}}
             </p>
           </div>
           <div class="col-lg-6 div-cent">
@@ -16,7 +16,7 @@
                 class="formcont"
                 placeholder="Enter Your Email Address"
               />
-              <button class="spandate">SEND</button>
+              <button class="spandate">{{$t("send")}}</button>
             </div>
           </div>
         </div>
@@ -88,7 +88,8 @@ p {
   color: #716d6e;
   font-size: 18px;
   font-weight: 400;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   line-height: 1.1em;
+  text-align: justify;
 }
 </style>

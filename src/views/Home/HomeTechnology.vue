@@ -4,12 +4,12 @@
       <div class="row">
         <div class="col-lg-6 div-cent">
           <div class="card mt-5">
-            <h2>L'Excellence au Volant</h2>
+            <h2>{{ $t("excellencevolant") }}</h2>
             <h6>
-              Des Voitures de Qualité Supérieure pour Chaque Trajet
+              {{ $t("vehiculehautgame") }}
             </h6>
             <p class="param-right">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta eaque, reprehenderit repellendus dolore dignissimos officia adipisci tempora, asperiores, vero atque quibusdam ipsa iusto qui nemo hic excepturi eveniet earum mollitia.
+              {{ $t("decouvexper") }}
             </p>
           </div>
         </div>

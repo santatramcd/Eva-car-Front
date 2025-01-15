@@ -1,7 +1,7 @@
 <template>
   <div class="divmarque">
     <div class="container divcont">
-      <h1 class="notmarq">Notre marque a été citée sur</h1>
+      <h1 class="notmarq">{{$t("Notremarque")}}</h1>
       <div class="division-grid">
         <div class="card">
           <div class="peg">
