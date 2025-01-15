@@ -13,11 +13,7 @@
             </a>
             <ul class="list-unstyled small text-muted">
               <li class="mb-2 text-justify">
-                Eva Car Rental Seychelles est votre solution idéale pour louer
-                une voiture et découvrir les merveilles de l’archipel. Située au
-                cœur des Seychelles, notre agence propose une large gamme de
-                véhicules adaptés à vos besoins, que vous soyez en voyage
-                d'affaires, en lune de miel ou en vacances en famille.
+                {{$t("evacarfooter")}}
               </li>
             </ul>
           </div>
