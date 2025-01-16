@@ -7,11 +7,6 @@
       <div class="row">
         <div class="col-lg-4">
           <h2>Informations</h2>
-          <img
-            src="https://avada.website/car-dealership/wp-content/uploads/sites/165/2021/12/heading-separator.png"
-            alt=""
-            srcset=""
-          />
           <div class="div-span mt-5">
             <span class="div-col-span">
               <span class="span-col"><i class="bi bi-telephone-fill"></i></span>
@@ -59,11 +54,6 @@
         </div>
         <div class="col-lg-8 div-form">
           <h2>Send Us A Message</h2>
-          <img
-            src="https://avada.website/car-dealership/wp-content/uploads/sites/165/2021/12/heading-separator.png"
-            alt=""
-            srcset=""
-          />
           <div>
             <form>
               <div class="row mt-5">
@@ -155,7 +145,7 @@ label {
   padding: 10px 0;
 }
 button {
-  background-color: #bd162d;
+  background-color: #ffbf00;
   color: #fff;
   border: none;
 }
