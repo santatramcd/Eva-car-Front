@@ -4,9 +4,9 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
-            <h1>{{$t("livrhotel")}}</h1>
+            <h1>{{ $t("livrhotel") }}</h1>
             <p>
-              {{$t("Nouspouvonslivrer")}}
+              {{ $t("Nouspouvonslivrer") }}
             </p>
           </div>
           <div class="col-lg-6 div-cent">
@@ -16,7 +16,7 @@
                 class="formcont"
                 placeholder="Enter Your Email Address"
               />
-              <button class="spandate">{{$t("send")}}</button>
+              <button class="spandate">{{ $t("send") }}</button>
             </div>
           </div>
         </div>
@@ -26,7 +26,7 @@
 </template>
 <script setup></script>
 <style scoped>
-.div-margin{
+.div-margin {
   margin-top: 100px;
 }
 .div-back {
@@ -44,8 +44,8 @@
   position: absolute;
   z-index: 5;
   top: 0;
-  left: 80%;
-  width: 20%;
+  left: 75%;
+  width: 25%;
   height: 100%;
   background-color: red;
   display: flex;
