@@ -61,28 +61,16 @@
               <li class="mb-2">
                 <a href="#">Getting started</a>
               </li>
-              <li class="mb-2">
-                <a href="#">Lorem ipsum dolor.</a>
-              </li>
-              <li class="mb-2">
-                <a href="#">Lorem ipsum dolor.</a>
-              </li>
-              <li class="mb-2">
-                <a href="#">Lorem ipsum dolor.</a>
-              </li>
             </ul>
           </div>
           <div class="col-6 col-lg-2 mb-3">
             <h5>PAYEMENT</h5>
             <ul class="list-unstyled">
               <li class="mb-2">
-                <a href="#">Lorem ipsum dolor.</a>
+                <a href="#">Stripe</a>
               </li>
               <li class="mb-2">
-                <a href="#">Lorem ipsum dolor.</a>
-              </li>
-              <li class="mb-2">
-                <a href="#">Lorem ipsum dolor.</a>
+                <a href="#">PayPal</a>
               </li>
             </ul>
           </div>
