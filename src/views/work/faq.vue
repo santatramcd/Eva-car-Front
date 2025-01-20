@@ -4,7 +4,7 @@
       <div class="row division-position">
         <div class="col-md-4">
           <div class="divsearch">
-            <h3 class="search-title">Recherche dans notre FAQ</h3>
+            <h3 class="search-title">{{ $t("recherchenotrefaq") }}</h3>
             <div class="divisionsear">
               <input
                 type="text"
@@ -17,13 +17,13 @@
             </div>
           </div>
           <ul class="ulsearch">
-            <li class="lisearch">Le système de réservation en ligne</li>
-            <li class="lisearch">Accidents et pannes</li>
-            <li class="lisearch">Les règles de circulation routière</li>
-            <li class="lisearch">Politique d'assurance et de responsabilité</li>
-            <li class="lisearch">Tarifs et autres conditions de location</li>
-            <li class="lisearch">Conditions de paiement</li>
-            <li class="lisearch">À propos de Eva Car Rental</li>
+            <li class="lisearch">{{ $t("systresenligne") }}</li>
+            <li class="lisearch">{{ $t("accidentpannes") }}</li>
+            <li class="lisearch">{{ $t("reglecircrout") }}</li>
+            <li class="lisearch">{{ $t("politiqueassresp") }}</li>
+            <li class="lisearch">{{ $t("tarifcondloc") }}</li>
+            <li class="lisearch">{{ $t("condpaiement") }}</li>
+            <li class="lisearch">{{ $t("aproposEvacar") }}</li>
           </ul>
         </div>
         <!-- Contenu de la page avec les sections -->
@@ -42,8 +42,7 @@
             </div>
             <div class="div2">
               <p class="param1">
-                Vous êtes bien sur la version adaptée à la destination choisie :
-                Seychelles.
+                {{ $t("versionadaptée") }}
               </p>
             </div>
             <div class="div3">

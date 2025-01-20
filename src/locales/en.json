@@ -55,6 +55,16 @@
   "profiteprice" : "Take advantage of our advantageous offers for an optimal experience at a reduced price.",
   "price": "price",
   "jours": "days",
+  "recherchenotrefaq" : "Search our FAQ",
+  "systresenligne" : "The online reservation system",
+  "accidentpannes" : "Accidents and breakdowns",
+  "reglecircrout" : "Road traffic rules",
+  "politiqueassresp" : "Insurance and Liability Policy",
+  "tarifcondloc" : "Prices and other rental conditions",
+  "condpaiement" : "Payment terms",
+  "aproposEvacar": "About Eva Car Rental",
+  "versionadaptée" : "You are of course on the version adapted to the chosen destination: Seychelles.",
+  "foireaq" : "Frequently Asked Questions",
 
   "faq": {
     "systemReservation": "1 - The online reservation system",
