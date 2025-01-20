@@ -11,20 +11,40 @@
             alt="logo"
             class="logo"
         /></a>
-        <div class="langage">
-          <span
-            ><img :src="$t('drapeau')" alt="drapeau" class="drapeau"
-          /></span>
-          <select class="i18n" v-model="$i18n.locale">
-            <option
-              v-for="locale in $i18n.availableLocales"
-              :key="`locale-${locale}`"
-              :value="locale"
-            >
-              {{ locale }}
-            </option>
-          </select>
+        <div class="div-lang-i18">
+          <ul class="langage">
+            <li class="dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span>
+                  <img :src="$t('drapeau')" alt="drapeau" class="drapeau" />
+                </span>
+                {{ $i18n.locale.toUpperCase() }}
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li
+                  v-for="locale in $i18n.availableLocales"
+                  :key="`locale-${locale}`"
+                >
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    @click.prevent="$i18n.locale = locale"
+                  >
+                    {{ locale.toUpperCase() }}
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
+
         <button
           class="navbar-toggler"
           type="button"
@@ -40,39 +60,52 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#" @click="home"
-                >{{ $t("evacar") }}</a
-              >
+              <a class="nav-link" href="#" @click="home">{{ $t("evacar") }}</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" @click="about">{{$t("carsprice")}}</a>
+              <a class="nav-link" href="#" @click="about">{{
+                $t("carsprice")
+              }}</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#" @click="work">FAQ</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" @click="cgv"
-                >{{$t("cgv")}}</a
+              <a class="nav-link" href="#" @click="cgv">{{ $t("cgv") }}</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" @click="contact">{{
+                $t("contact")
+              }}</a>
+            </li>
+            <li class="nav-item dropdown div-langage">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" @click="contact">{{$t("contact")}}</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link div-langage" href="#">
-                <span
-                  ><img :src="$t('drapeau')" alt="drapeau" class="drapeau"
-                /></span>
-                <select v-model="$i18n.locale" class="i18n">
-                  <option
-                    v-for="locale in $i18n.availableLocales"
-                    :key="`locale-${locale}`"
-                    :value="locale"
-                  >
-                    {{ locale }}
-                  </option>
-                </select>
+                <span>
+                  <img :src="$t('drapeau')" alt="drapeau" class="drapeau" />
+                </span>
+                {{ $i18n.locale.toUpperCase() }}
               </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li
+                  v-for="locale in $i18n.availableLocales"
+                  :key="`locale-${locale}`"
+                >
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    @click.prevent="$i18n.locale = locale"
+                  >
+                    {{ locale.toUpperCase() }}
+                  </a>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -151,9 +184,24 @@ function toggleButtonText() {
 }
 .langage {
   display: none;
+  padding: 0;
+}
+.langage li {
+  list-style: none;
 }
 .drapeau {
   width: 30px;
+  margin-top: -3px;
+}
+.langage li a{
+  color: #333;
+}
+.div-lang-i18 {
+  display: flex;
+  height: 35px;
+  padding-top: 20px;
+  flex-wrap: wrap;
+  align-content: center;
 }
 @media (max-width: 1063px) {
   .navbar-nav {
@@ -190,7 +238,7 @@ function toggleButtonText() {
   }
   .langage {
     display: flex;
-    justify-content: center;
+    // justify-content: center;
   }
   .div-langage {
     display: none;
