@@ -173,6 +173,69 @@ const dataAuto = [
     title: "faq.4-4annulation",
     message: `faq.annulerassurance`,
   },
+  {
+    h1: "faq.5-tarif-conditions",
+    title: "faq.5-1prixcalcule",
+    message: `faq.prixaffiche`,
+  },
+  {
+    h1: "",
+    title: "faq.5-2deviseaccept",
+    message: `faq.paiementenlignes`,
+  },
+  {
+    h1: "",
+    title: "faq.5-3recuperevoiture",
+    message: `faq.recupeaeroport`,
+  },
+  {
+    h1: "",
+    title:
+      "faq.5-4choisirendroits",
+    message: `faq.petitiles`,
+  },
+  {
+    h1: "",
+    title:
+      "faq.5-5reservoiressence",
+    message: `faq.negarantissonspas`,
+  },
+  {
+    h1: "faq.6-conditionpaiement",
+    title: "faq.6-1besoincartecredit",
+    message: `faq.payerbancaire`,
+  },
+  {
+    h1: "",
+    title: "faq.6-2payerpaypal",
+    message: `faq.avoireffectué`,
+  },
+  {
+    h1: "",
+    title: "faq.6-3livraison",
+    message: `faq.prixmentionnés`,
+  },
+  {
+    h1: "",
+    title: "faq.6-4depotgarantie",
+    message: `faq.depotgarant`,
+  },
+  {
+    h1: "faq.7-apropos",
+    title: "faq.7-1atouts",
+    message: `faq.apportequalité`,
+  },
+  {
+    h1: "",
+    title: "faq.7-2equipeEva",
+    message: `faq.EvaCarMarque`,
+  },
+  {
+    h1: "",
+    title:
+      "faq.7-3reservation",
+    message: `faq.garantireserve`,
+  },
 ];
 
 const isIconChanged = ref(Array(dataAuto.length).fill(false));
