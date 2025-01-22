@@ -78,8 +78,6 @@ input {
   width: 100%;
 }
 .div-cent {
-  background-color: antiquewhite;
-  padding: 0;
   height: 50px;
 }
 h1 {
