@@ -1,80 +1,18 @@
 <template>
   <div class="divmarque">
     <div class="container divcont">
-      <h1 class="notmarq">{{$t("Notremarque")}}</h1>
+      <h1 class="notmarq">{{ $t("Notremarque") }}</h1>
       <div class="division-grid">
-        <div class="card">
-          <div class="peg">
-            <div class="flex-column-item">
+        <!-- Slides originaux -->
+        <div class="slide" v-for="(item, index) in slides" :key="index">
+          <div class="card">
+            <div class="peg">
               <img
-                src="https://d12ittivwictyd.cloudfront.net/images/as-seen-on/telegraph-travel.jpg"
-                alt="As Seen On"
+                :src="item.src"
+                :alt="item.alt"
                 draggable="false"
                 class="img-fluid imfluid"
-                title="Telegraph travel"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="peg">
-            <div class="flex-column-item text-center">
-              <img
-                src="https://d12ittivwictyd.cloudfront.net/images/as-seen-on/merian.png"
-                title="Merian"
-                draggable="false"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="peg">
-            <div class="flex-column-item text-center">
-              <img
-                src="https://d12ittivwictyd.cloudfront.net/images/as-seen-on/petit-fute.png"
-                alt="As Seen On"
-                title="Petit futé"
-                draggable="false"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="peg">
-            <div class="flex-column-item text-center">
-              <img
-                src="https://d12ittivwictyd.cloudfront.net/images/as-seen-on/gq-za.png"
-                draggable="false"
-                title="GQ South Africa"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="peg">
-            <div class="flex-column-item text-center">
-              <img
-                src="https://d12ittivwictyd.cloudfront.net/images/as-seen-on/trustpilot.png"
-                alt="As Seen On"
-                title="trustpilot"
-                draggable="false"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="peg">
-            <div class="flex-column-item text-center">
-              <img
-                src="https://d12ittivwictyd.cloudfront.net/images/as-seen-on/routard.png"
-                alt="As Seen On"
-                title="Routar"
-                draggable="false"
-                class="img-fluid"
+                :title="item.title"
               />
             </div>
           </div>
@@ -84,7 +22,40 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+const slides = [
+  {
+    src: "https://d12ittivwictyd.cloudfront.net/images/as-seen-on/telegraph-travel.jpg",
+    alt: "As Seen On",
+    title: "Telegraph travel",
+  },
+  {
+    src: "https://d12ittivwictyd.cloudfront.net/images/as-seen-on/merian.png",
+    alt: "Merian",
+    title: "Merian",
+  },
+  {
+    src: "https://d12ittivwictyd.cloudfront.net/images/as-seen-on/petit-fute.png",
+    alt: "Petit futé",
+    title: "Petit futé",
+  },
+  {
+    src: "https://d12ittivwictyd.cloudfront.net/images/as-seen-on/gq-za.png",
+    alt: "GQ South Africa",
+    title: "GQ South Africa",
+  },
+  {
+    src: "https://d12ittivwictyd.cloudfront.net/images/as-seen-on/trustpilot.png",
+    alt: "Trustpilot",
+    title: "Trustpilot",
+  },
+  {
+    src: "https://d12ittivwictyd.cloudfront.net/images/as-seen-on/routard.png",
+    alt: "Routard",
+    title: "Routard",
+  },
+];
+</script>
 <style lang="scss" scoped>
 .divmarque {
   background-color: #fff;
@@ -132,4 +103,5 @@
 .card {
   border: none;
 }
+
 </style>
