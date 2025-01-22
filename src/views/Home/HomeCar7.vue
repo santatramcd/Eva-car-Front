@@ -10,7 +10,7 @@
     <!--  -->
     <div class="container">
       <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-6 card-division">
           <div class="card-icn">
             <div class="div-flex">
               <span class="span-icn"
@@ -26,43 +26,43 @@
           </div>
         </div>
         <!-- 2 -->
-        <div class="col-lg-6">
+        <div class="col-lg-6 card-division">
           <div class="card-icn">
             <div class="div-flex">
               <span class="span-icn"><i class="bi bi-gift"></i></span>
-              <h2 class="head-h2">{{$t("expers")}}</h2>
+              <h2 class="head-h2">{{ $t("expers") }}</h2>
             </div>
             <div>
               <p class="param-icn">
-                {{$t("pourexp")}}
+                {{ $t("pourexp") }}
               </p>
             </div>
           </div>
         </div>
         <!-- 3 -->
-        <div class="col-lg-6">
+        <div class="col-lg-6 card-division">
           <div class="card-icn">
             <div class="div-flex">
               <span class="span-icn"><i class="bi bi-send-fill"></i></span>
-              <h2 class="head-h2">{{$t("Acclieu")}}</h2>
+              <h2 class="head-h2">{{ $t("Acclieu") }}</h2>
             </div>
             <div>
               <p class="param-icn">
-                {{$t("psblacc")}}
+                {{ $t("psblacc") }}
               </p>
             </div>
           </div>
         </div>
         <!-- 4 -->
-        <div class="col-lg-6">
+        <div class="col-lg-6 card-division">
           <div class="card-icn">
             <div class="div-flex">
               <span class="span-icn"><i class="bi bi-bus-front"></i></span>
-              <h2 class="head-h2">{{$t("transimple")}}</h2>
+              <h2 class="head-h2">{{ $t("transimple") }}</h2>
             </div>
             <div>
               <p class="param-icn">
-                {{$t("gracevoit")}}
+                {{ $t("gracevoit") }}
               </p>
             </div>
           </div>
@@ -123,7 +123,7 @@
   line-height: 1.7em;
   text-align: justify;
 }
-.card-icn {
+/* .card-icn {
   background-color: #ededed;
   padding: 30px;
   border-style: solid;
@@ -131,7 +131,33 @@
   border-color: rgba(2, 1, 1, 0);
   border-radius: 0px 0px 0px 0px;
   margin-top: 30px;
+} */
+.card-icn {
+  background-color: #ededed;
+  padding: 30px;
+  border: 1px solid rgba(2, 1, 1, 0);
+  border-radius: 0px;
+  margin-top: 30px;
+  display: flex; /* S'assurer que le contenu s'étire */
+  flex-direction: column; /* Disposer le contenu verticalement */
+  justify-content: space-between; /* Équilibrer l'espacement */
+  min-height: 100%; /* S'assurer que toutes les cartes ont la même hauteur */
+  box-sizing: border-box; /* Inclure les bordures et le padding */
+  height: 100%;
 }
+
+.card-division {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  /* word-wrap: break-word; */
+  background-color: #fff;
+  background-clip: border-box;
+  /* border: 1px solid rgba(0, 0, 0, 0.125); */
+  border-radius: 0.25rem;
+}
+
 .div-flex {
   display: flex;
   gap: 20px;
