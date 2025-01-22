@@ -11,11 +11,9 @@
               data-aos="fade-up"
               data-aos-delay="100"
             >
-              <h3><span>Frequently Asked </span><strong>Questions</strong></h3>
+              <h3><span>{{ $t("Frequently") }}</span><strong> Questions</strong></h3>
               <p class="param-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis
-                aute irure dolor in reprehenderit
+                {{ $t("messagefaq") }}
               </p>
             </div>
 
@@ -37,7 +35,7 @@
                     <i class="faq-icon bi bi-question-circle"></i>
                   </span>
                   <a class="nav-link">
-                    Non consectetur a erat nam at lectus urna duis?
+                    {{ $t("conditionlouerfaq") }}
                   </a>
                   <span class="span-icone-right">
                     <i class="bi bi-caret-down-fill"></i>
@@ -45,9 +43,7 @@
                 </p>
                 <div class="collapse" id="Example">
                   <div class="card card-body">
-                    Some placeholder content for the collapse component. This
-                    panel is hidden by default but revealed when the user
-                    activates the relevant trigger.
+                    {{ $t("conditionlouerfaqrep") }}
                   </div>
                 </div>
               </div>
@@ -66,7 +62,7 @@
                     <i class="faq-icon bi bi-question-circle"></i>
                   </span>
                   <a class="nav-link">
-                    Non consectetur a erat nam at lectus urna duis?
+                    {{ $t("assurancefaq") }}
                   </a>
                   <span class="span-icone-right">
                     <i class="bi bi-caret-down-fill"></i>
@@ -74,9 +70,7 @@
                 </p>
                 <div class="collapse" id="collapseExample">
                   <div class="card card-body">
-                    Some placeholder content for the collapse component. This
-                    panel is hidden by default but revealed when the user
-                    activates the relevant trigger.
+                    {{ $t("assurancefaqrep") }}
                   </div>
                 </div>
               </div>
@@ -94,7 +88,7 @@
                     <i class="faq-icon bi bi-question-circle"></i>
                   </span>
                   <a class="nav-link">
-                    Non consectetur a erat nam at lectus urna duis?
+                    {{ $t("reservefaq") }}
                   </a>
                   <span class="span-icone-right">
                     <i class="bi bi-caret-down-fill"></i>
@@ -102,9 +96,7 @@
                 </p>
                 <div class="collapse" id="collapse">
                   <div class="card card-body">
-                    Some placeholder content for the collapse component. This
-                    panel is hidden by default but revealed when the user
-                    activates the relevant trigger.
+                    {{ $t("reservefasrep") }}
                   </div>
                 </div>
               </div>

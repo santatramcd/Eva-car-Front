@@ -2,7 +2,7 @@
   <div class="div-margin">
     <div class="div-back">
       <div class="container">
-        <div class="row">
+        <div class="row al-cent">
           <div class="col-lg-6">
             <h1>{{ $t("livrhotel") }}</h1>
             <p>
@@ -58,6 +58,10 @@ input {
   outline: none;
   border: none;
 }
+.al-cent {
+  display: flex;
+  align-items: center;
+}
 .formcont {
   /* border-radius: 8px; */
   height: 50px;
@@ -74,9 +78,9 @@ input {
   width: 100%;
 }
 .div-cent {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  background-color: antiquewhite;
+  padding: 0;
+  height: 50px;
 }
 h1 {
   font-size: 30px;

@@ -46,8 +46,8 @@
   "excellencevolant": "Excellence at the Wheel",
   "vehiculehautgame": "Premium vehicles for every trip",
   "decouvexper": "Discover an incomparable driving experience thanks to our superior quality cars, combining comfort, performance, and elegance to meet all your expectations.",
-  "livrhotel": "Hotel delivery all over the island!",
-  "Nouspouvonslivrer": "Nous pouvons livrer votre voiture de location directement à votre hôtel. Et dans la plupart des cas, c'est gratuit, selon l'emplacement de votre hôtel et la disponibilité des véhicules (priorité aux réservations faites à l'avance) !",
+  "livrhotel": "Delivery to the hotel",
+  "Nouspouvonslivrer": "We deliver your rental car directly to your hotel",
   "send": "SEND",
   "Notremarque": "Our brand has been mentioned on",
   "evacarfooter": "Eva Car Rental Seychelles is your ideal solution for renting a car and discovering the wonders of the archipelago. Located in the heart of Seychelles, our agency offers a wide range of vehicles to suit your needs, whether you are on a business trip, on your honeymoon or on a family vacation.",
@@ -128,5 +128,13 @@
     "EvaCarMarque" : "Eva Car Rental is a brand owned by Indian Ocean Travel. We have been in the car rental and travel industry for over 15 years, starting in the Mauritian market. The head office is located in Seychelles, but we have expanded worldwide, and now have teams in Germany and Romania. Our staff are fluent in English, French, and German.",
     "7-3reservation" : "7.3 Is online car booking with Eva Car Rental secure?",
     "garantireserve" : "We guarantee you a 100% secure car booking and your money is protected. Here's why:<br><br>a) If one of our suppliers encounters financial difficulties, your money is always safe. At Eva Car Rental, we do not touch your funds until the vehicle is returned.<br><br>b) There is very little risk that we will go bankrupt, because as a broker, we have much less financial procedures than a car rental agency. We are very experienced in handling large amounts of external money.<br><br>c) Thanks to our system, paying your invoices online is reliable and secure. We do not have access to your financial data. If you pay with a credit card or via PayPal, the payment is made directly by our bank's servers. Those who claim to be protected against hacking do not know what they are talking about. But if there is nothing to gain for a hacker, we can all sleep soundly."
-  }
+  },
+  "Frequently" : "Frequently Asked",
+  "messagefaq" : "Explore the beautiful Seychelles islands at your own pace with our reliable and affordable rental cars. Whether you are visiting Mahé, Praslin or La Digue, we have the perfect vehicle for your adventure. Enjoy the freedom to discover heavenly beaches, nature reserves and local attractions, all while having comfortable and convenient transportation.",
+  "conditionlouerfaq" : "What are the conditions for renting a car in Seychelles?",
+  "conditionlouerfaqrep" : "To rent a car, you must be at least 21 years old and have had a valid driving license for at least 2 years. It is also necessary to present a valid passport and credit card for payment and deposit.",
+  "assurancefaq" : "Is insurance included in the rental?",
+  "assurancefaqrep" : "Yes, all our car rentals include basic insurance. However, we recommend taking out additional insurance for full coverage in the event of damage or theft.",
+  "reservefaq" : "How can I reserve a car online?",
+  "reservefasrep" : "You can easily book your car online on our website by selecting the vehicle, rental dates and filling in the necessary information. Secure payment is available to guarantee your reservation."
 }
