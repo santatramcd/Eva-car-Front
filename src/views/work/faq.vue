@@ -17,13 +17,19 @@
             </div>
           </div>
           <ul class="ulsearch">
-            <li class="lisearch">{{ $t("systresenligne") }}</li>
-            <li class="lisearch">{{ $t("accidentpannes") }}</li>
-            <li class="lisearch">{{ $t("reglecircrout") }}</li>
-            <li class="lisearch">{{ $t("politiqueassresp") }}</li>
-            <li class="lisearch">{{ $t("tarifcondloc") }}</li>
-            <li class="lisearch">{{ $t("condpaiement") }}</li>
-            <li class="lisearch">{{ $t("aproposEvacar") }}</li>
+            <li
+              v-for="(item, index) in filteredDataWithH1"
+              :key="index"
+              class="lisearch"
+              :class="{ active: activeIndex === item.h1 }"
+            >
+              <a
+                :href="'#' + item.h1"
+                @click.prevent="handleItemClick(item.h1)"
+              >
+                {{ $t(item.h1) }}
+              </a>
+            </li>
           </ul>
         </div>
         <!-- Contenu de la page avec les sections -->
@@ -59,7 +65,7 @@
             v-for="(item, index) in filteredData"
             :key="index"
           >
-            <h4>{{ $t(item.h1) }}</h4>
+            <h4 :id="item.h1">{{ $t(item.h1) || "" }}</h4>
             <p class="h1faq" @click="toggleIconNext(index)">
               <a
                 data-bs-toggle="collapse"
@@ -95,7 +101,7 @@
 </template>
 
 <script setup>
-import { ref, computed } from "vue";
+import { ref, computed, onMounted } from "vue";
 
 const dataAuto = [
   {
@@ -190,14 +196,12 @@ const dataAuto = [
   },
   {
     h1: "",
-    title:
-      "faq.5-4choisirendroits",
+    title: "faq.5-4choisirendroits",
     message: `faq.petitiles`,
   },
   {
     h1: "",
-    title:
-      "faq.5-5reservoiressence",
+    title: "faq.5-5reservoiressence",
     message: `faq.negarantissonspas`,
   },
   {
@@ -232,20 +236,19 @@ const dataAuto = [
   },
   {
     h1: "",
-    title:
-      "faq.7-3reservation",
+    title: "faq.7-3reservation",
     message: `faq.garantireserve`,
   },
 ];
 
 const isIconChanged = ref(Array(dataAuto.length).fill(false));
-const searchQuery = ref("");
+// const searchQuery = ref("");
 
-const filteredData = computed(() => {
-  return dataAuto.filter((item) =>
-    item.message.toLowerCase().includes(searchQuery.value.toLowerCase())
-  );
-});
+// const filteredData = computed(() => {
+//   return dataAuto.filter((item) =>
+//     item.message.toLowerCase().includes(searchQuery.value.toLowerCase())
+//   );
+// });
 
 const toggleIconNext = (index) => {
   isIconChanged.value[index] = !isIconChanged.value[index];
@@ -256,11 +259,59 @@ const isVisible = ref(true);
 const handleClick = () => {
   isVisible.value = false;
 };
+
+//
+// État pour gérer la recherche
+const searchQuery = ref("");
+const activeIndex = ref(null);
+
+// Filtrage des données
+const filteredData = computed(() => {
+  return dataAuto.filter((item) =>
+    item.message.toLowerCase().includes(searchQuery.value.toLowerCase())
+  );
+});
+
+// Filtrer uniquement les données avec un h1 non vide
+const filteredDataWithH1 = computed(() => {
+  return filteredData.value.filter((item) => item.h1);
+});
+
+// Gérer le clic sur un élément de la liste
+const handleItemClick = (h1Value) => {
+  activeIndex.value = h1Value;
+  const element = document.getElementById(h1Value);
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
+// Suivi du défilement pour activer l'élément de la liste correspondant
+const checkActiveSection = () => {
+  const sections = document.querySelectorAll("h4");
+  sections.forEach((section) => {
+    const rect = section.getBoundingClientRect();
+    if (rect.top <= window.innerHeight / 2 && rect.bottom >= 0) {
+      activeIndex.value = section.id;
+    }
+  });
+};
+
+// Écouter le défilement pour changer l'élément actif
+onMounted(() => {
+  window.addEventListener("scroll", checkActiveSection);
+});
 </script>
 <style lang="scss" scoped>
 .custom-hover:hover {
   color: #6dace6;
 }
+.active a {
+  color: #4a9fef;
+  // border-left: 1px solid #4a9fef;
+  font-weight: 600;
+}
+
 .divsearch {
   background-color: #fff;
   padding: 20px;
