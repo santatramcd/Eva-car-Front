@@ -231,7 +231,7 @@ li {
   color: #2d3e52;
 }
 .ulsearch {
-  background-color: #fff;
+  background-color: #f5f5f5;
   margin-top: 20px;
   padding: 20px;
   position: sticky;
