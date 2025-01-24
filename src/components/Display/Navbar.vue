@@ -158,12 +158,12 @@ function toggleButtonText() {
   justify-content: space-around !important;
 }
 .logo {
-  width: 80%;
+  width: 35%;
 }
 .navbar-brand {
   width: 20% !important;
   display: flex !important;
-  justify-content: flex-end !important;
+  justify-content: center !important;
 }
 .nav-item a {
   font-weight: 400;
