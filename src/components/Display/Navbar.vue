@@ -7,7 +7,7 @@
       <div class="container-fluid cont-padd">
         <a class="navbar-brand" href="#" @click="home"
           ><img
-            src="../../../public/image/logo-black.png"
+            src="../../../public/image/logo-black-2.png"
             alt="logo"
             class="logo"
         /></a>
@@ -234,7 +234,7 @@ function toggleButtonText() {
     color: #fff;
   }
   .logo {
-    width: 165px;
+    width: 80px;
   }
   .langage {
     display: flex;

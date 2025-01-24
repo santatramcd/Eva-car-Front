@@ -136,5 +136,22 @@
   "assurancefaq" : "Is insurance included in the rental?",
   "assurancefaqrep" : "Yes, all our car rentals include basic insurance. However, we recommend taking out additional insurance for full coverage in the event of damage or theft.",
   "reservefaq" : "How can I reserve a car online?",
-  "reservefasrep" : "You can easily book your car online on our website by selecting the vehicle, rental dates and filling in the necessary information. Secure payment is available to guarantee your reservation."
+  "reservefasrep" : "You can easily book your car online on our website by selecting the vehicle, rental dates and filling in the necessary information. Secure payment is available to guarantee your reservation.",
+  "notice" :{
+    "généralités": "1 - Generalities",
+    "1-1courtier" : "Eva Car Rental is an international car rental broker. Upon receipt of payment, our customers receive contact information for the rental agency involved in the rental.",
+    "1-2services" : "Our services are offered to all customers, regardless of their country of residence. Reservations can be made in French, German, English, or Chinese. You can select the language of your choice by clicking on the drop-down menu located at the top left of our website. For the French version of the site – in particular when making a reservation – it is the French version of these general terms and conditions of sale that serves as the reference.",
+    "1-3remise": "For any resale or rental of our services, prior written agreement is required. Indeed, such reservations are subject to different conditions of sale.",
+    "1-4contrat" : "The mutually binding rental agreement becomes valid as soon as we confirm the availability of the vehicle. Confirmation of your reservation may take up to 48 hours.",
+    "1-5reservation" : "In the event of a contradictory reservation, the information systematically collected and displayed (model, transmission type, time and location) throughout the reservation process cancels the free text entries made by the customer.",
+    "1-6client" : "If the customer provides his flight number, it does not become part of the contract. Entries in the 'special wishes' field only become part of the contract if we expressly confirm them.",
+    "1-7agence" : "If the local rental agency deems it necessary, the customer will have to sign a rental agreement with them. If the local rental agreement contains provisions that deviate from the information we have provided, the following rules apply:",
+    "1-7-1totalité" : "All information entered on the ticket issued by our company is legally binding on us and we will reimburse any damages resulting from it.",
+    "1-7-2autre" : "Any other discrepancies between the local rental contract and our terms at the customer's expense can be refunded up to €250. A larger refund is only possible if explicitly confirmed by our customer service before signing the contract.",
+    "1-7-3terme": "In the event that divergent terms are actually or potentially responsible for a disadvantage for the customer of an excess or 250€, the customer has the right to refuse to sign the local rental contract and to cancel the reservation without charge.",
+    "1-7-4limite" : "This limit also applies to claims by a third party if they are not - for any reason - covered by the local supplier's liability insurance.",
+    "1-8malheur" : "If unfortunately the reserved car model cannot be delivered to you, another model of the same category or a higher category (based on our rental rates) may be offered to you.",
+    "1-9possible" : "Cancellations can be made by email or telephone at any time. No reason is required for cancellation. Refunds can only be made after deduction of the cancellation fees listed below:",
+    "1-9-1annulations" : "Cancellations received up to 48 hours prior to vehicle pick-up are generally exempt from fees, unless a different cancellation policy is displayed and explicitly confirmed during the booking process."
+  }
 }

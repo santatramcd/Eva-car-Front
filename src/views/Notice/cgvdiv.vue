@@ -11,36 +11,37 @@
                 type="text"
                 class="form-control formcont"
                 aria-label="Amount"
-                placeholder="Faite votre recherche ici"
+                placeholder="Faites votre recherche ici"
                 v-model="searchQuery"
               />
               <span class="spanserch"><i class="bi bi-search"></i></span>
             </div>
           </div>
           <ul class="ulsearch">
-            <li class="lisearch">Généralités</li>
-            <li class="lisearch">Conditions de restitution du véhicule</li>
-            <li class="lisearch">Permis de conduire</li>
-            <li class="lisearch">Tarifs et modes de paiement</li>
-            <li class="lisearch">Assurance</li>
-            <li class="lisearch">
-              Accidents, dommages, et responsabilité du client
+            <li
+              v-for="(item, index) in filteredDataWithTitle"
+              :key="index"
+              class="lisearch"
+              :class="{ active: activeIndex === item.title }"
+            >
+              <a
+                :href="'#' + item.title"
+                @click.prevent="handleItemClick(item.title)"
+              >
+                {{ $t(item.title) }}
+              </a>
             </li>
-            <li class="lisearch">Politique de confidentialité</li>
-            <li class="lisearch">Divers</li>
           </ul>
         </div>
         <!-- Contenu de la page avec les sections -->
         <div class="col-md-8">
           <div v-for="(item, index) in filteredData" :key="index">
-            <h2 class="title-header">{{item.title}}</h2>
+            <h4 class="title-header" :id="item.title">{{ $t(item.title) || "" }}</h4>
             <table class="table">
               <tbody>
                 <tr>
                   <th scope="row">{{ item.number }}</th>
-                  <td>
-                    {{ item.description }}
-                  </td>
+                  <td>{{ $t(item.description) }}</td>
                 </tr>
               </tbody>
             </table>
@@ -52,47 +53,140 @@
 </template>
 
 <script setup>
-import { ref, computed } from "vue";
+import { ref, computed, onMounted } from "vue";
 
 const dataAuto = [
   {
-    number: 1,
-    title : "Généralités",
-    description: `Eva Car Rental est un courtier en location de voitures international. A réception du paiement, nos clients reçoivent les informations de contact de l'agence de location impliquée dans la location.`,
+    number: "1-1",
+    title: "notice.généralités",
+    description: `notice.1-1courtier`,
   },
   {
-    number: 2,
-    description: `Nos services sont offerts à tous les clients, quel que soit leur pays de résidence. La réservation peut être effectuée en français, en allemand, en anglais, ou en chinois. Vous pouvez sélectionner la langue de votre choix en cliquant sur le menu déroulant situé en haut à gauche de notre site web. Pour la version française du site – en particulier lors d'une réservation – c'est bien la version française de ces conditions générales de vente qui fait office de référence.`,
+    number: "1-2",
+    title: "",
+    description: `notice.1-2services`,
   },
   {
-    number: 3,
-    description: `Pour toute remise en vente ou en location de nos services, un accord écrit préalable est requis. En effet, de telles réservations sont sujettes à des conditions de vente différentes.`,
+    number: "1-3",
+    title: "",
+    description: `notice.1-3remise`,
   },
   {
-    number: 4,
-    description: `Le contrat de location mutuellement contraignant devient valide dès que nous confirmons la disponibilité du véhicule. La confirmation de votre réservation peut prendre jusqu'à 48 heures.`,
+    number: "1-4",
+    title: "",
+    description: `notice.1-4contrat`,
   },
   {
-    number: 5,
-    description: `En cas de réservation contradictoire, les informations collectées et affichées systématiquement (modèle, type de transmission, heure et lieu) tout au long du processus de réservation annulent les saisies de texte libres effectuées par le client.`,
+    number: "1-5",
+    title: "",
+    description: `notice.1-5reservation`,
+  },
+  {
+    number: "1-6",
+    title: "",
+    description: `notice.1-6client`,
+  },
+  {
+    number: "1-7",
+    title: "",
+    description: `notice.1-7agence`,
+  },
+  {
+    number: "1-7-1",
+    title: "",
+    description: `notice.1-7-1totalité`,
+  },
+  {
+    number: "1-7-2",
+    title: "",
+    description: `notice.1-7-2autre`,
+  },
+  {
+    number: "1-7-3",
+    title: "",
+    description: `notice.1-7-3terme`,
+  },
+  {
+    number: "1-7-4",
+    title: "",
+    description: `notice.1-7-4limite`,
+  },
+  {
+    number: "1-8",
+    title: "",
+    description: `notice.1-8malheur`,
+  },
+  {
+    number: "1-9",
+    title: "",
+    description: `notice.1-9possible`,
+  },
+  {
+    number: "1-9-1",
+    title: "",
+    description: `notice.1-9-1annulations`,
   },
 ];
 
 const searchQuery = ref("");
+const activeIndex = ref("");
 
 const filteredData = computed(() => {
   return dataAuto.filter((item) =>
     item.description.toLowerCase().includes(searchQuery.value.toLowerCase())
   );
 });
+
+// Filtrer uniquement les données avec un title non vide
+const filteredDataWithTitle = computed(() => {
+  return dataAuto.filter((item) => item.title);
+});
+
+// Gérer le clic sur un élément de la liste
+const handleItemClick = (titleValue) => {
+  activeIndex.value = titleValue;
+  const element = document.getElementById(titleValue);
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
+// Suivi du défilement pour activer l'élément de la liste correspondant
+const checkActiveSection = () => {
+  const sections = document.querySelectorAll("h4");
+  sections.forEach((section) => {
+    const rect = section.getBoundingClientRect();
+    if (rect.top <= window.innerHeight / 2 && rect.bottom >= 0) {
+      activeIndex.value = section.id;
+    }
+  });
+};
+
+// Écouter le défilement pour changer l'élément actif
+onMounted(() => {
+  window.addEventListener("scroll", checkActiveSection);
+});
 </script>
 
+
 <style lang="scss" scoped>
+th{
+  min-width: 60px;
+}
 .title-header {
   font-size: 25px;
   color: #2d3e52;
   padding: 5px 20px;
 }
+.lisearch a{
+  color: #2d3e52;
+}
+.active a {
+  color: #4a9fef;
+  // border-left: 1px solid #4a9fef;
+  font-weight: 600;
+}
+
 .divsearch {
   background-color: #fff;
   padding: 20px;
