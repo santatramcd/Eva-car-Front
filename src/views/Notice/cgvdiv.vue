@@ -126,6 +126,16 @@ const dataAuto = [
     title: "",
     description: `notice.1-9-1annulations`,
   },
+  {
+    number: "2-1",
+    title: "notice.2-condition",
+    description: `notice.2-1notice`,
+  },
+  {
+    number: "3-1",
+    title: "notice.3-permis",
+    description: `notice.3-1prise`,
+  },
 ];
 
 const searchQuery = ref("");

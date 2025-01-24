@@ -152,6 +152,10 @@
     "1-7-4limite" : "This limit also applies to claims by a third party if they are not - for any reason - covered by the local supplier's liability insurance.",
     "1-8malheur" : "If unfortunately the reserved car model cannot be delivered to you, another model of the same category or a higher category (based on our rental rates) may be offered to you.",
     "1-9possible" : "Cancellations can be made by email or telephone at any time. No reason is required for cancellation. Refunds can only be made after deduction of the cancellation fees listed below:",
-    "1-9-1annulations" : "Cancellations received up to 48 hours prior to vehicle pick-up are generally exempt from fees, unless a different cancellation policy is displayed and explicitly confirmed during the booking process."
+    "1-9-1annulations" : "Cancellations received up to 48 hours prior to vehicle pick-up are generally exempt from fees, unless a different cancellation policy is displayed and explicitly confirmed during the booking process.",
+    "2-condition" : "2 - Vehicle return conditions",
+    "2-1notice" : "The customer must be present at the time of collection and return of the vehicle. Apparent damage must be mentioned in the rental contract.",
+    "3-permis" : "3 - Driving license",
+    "3-1prise" : "When picking up the car, the customer must present a valid driving license in the rental country, at least one year old. In addition, depending on the car model rented, a minimum age of 21 years or older may be required for all drivers. Minimum age is displayed during the booking process. If the driving license is not presented to us, or if the customer does not meet the age requirement, Maki Car Rental reserves the right to cancel the reservation and charge a fee (see 1.9)."
   }
 }
