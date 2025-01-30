@@ -11,7 +11,7 @@
     <Homefaq />
     <Homeproduct data-aos="fade-up" />
     <Homemarque data-aos="fade-up" />
-    <Maps />
+    <Maps data-aos="fade-up"/>
   </div>
 </template>
 <script setup>

@@ -141,7 +141,7 @@
   display: flex; /* S'assurer que le contenu s'étire */
   flex-direction: column; /* Disposer le contenu verticalement */
   justify-content: space-between; /* Équilibrer l'espacement */
-  min-height: 100%; /* S'assurer que toutes les cartes ont la même hauteur */
+  /* min-height: 100%; */
   box-sizing: border-box; /* Inclure les bordures et le padding */
   height: 100%;
 }
