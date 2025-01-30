@@ -141,6 +141,21 @@ const dataAuto = [
     title: "notice.4-tarifs",
     description: `notice.4-1paiement`,
   },
+  {
+    number: "5-1",
+    title: "notice.5-Assurance",
+    description: `notice.5-1assurance`,
+  },
+  {
+    number: "5-1-1",
+    title: "",
+    description: `notice.5-1-1dommages`,
+  },
+  {
+    number: "5-1-2",
+    title: "",
+    description: `notice.5-1-2assurance`,
+  },
 ];
 
 const searchQuery = ref("");
