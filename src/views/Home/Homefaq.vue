@@ -11,7 +11,10 @@
               data-aos="fade-up"
               data-aos-delay="100"
             >
-              <h3><span>{{ $t("Frequently") }}</span><strong> Questions</strong></h3>
+              <h3>
+                <span>{{ $t("Frequently") }}</span
+                ><strong> Questions</strong>
+              </h3>
               <p class="param-text">
                 {{ $t("messagefaq") }}
               </p>
@@ -22,85 +25,36 @@
               data-aos="fade-up"
               data-aos-delay="200"
             >
-              <div class="faq-item">
+              <div
+                v-for="(item, index) in faqItems"
+                :key="index"
+                class="faq-item"
+              >
                 <p
                   class="param-div"
                   data-bs-toggle="collapse"
-                  href="#Example"
+                  :href="'#faq' + index"
                   role="button"
                   aria-expanded="false"
-                  aria-controls="Example"
+                  :aria-controls="'faq' + index"
+                  @click="toggleIcon(index)"
                 >
                   <span class="span-icone">
                     <i class="faq-icon bi bi-question-circle"></i>
                   </span>
-                  <a class="nav-link">
-                    {{ $t("conditionlouerfaq") }}
-                  </a>
+                  <a class="nav-link">{{ $t(item.question) }}</a>
                   <span class="span-icone-right">
-                    <i class="bi bi-caret-down-fill"></i>
+                    <i :class="icons[index]"></i>
                   </span>
                 </p>
-                <div class="collapse" id="Example">
+                <div class="collapse" :id="'faq' + index">
                   <div class="card card-body">
-                    {{ $t("conditionlouerfaqrep") }}
+                    {{ $t(item.answer) }}
                   </div>
                 </div>
               </div>
-              <!-- End Faq item-->
 
-              <div class="faq-item">
-                <p
-                  class="param-div"
-                  data-bs-toggle="collapse"
-                  href="#collapseExample"
-                  role="button"
-                  aria-expanded="false"
-                  aria-controls="collapseExample"
-                >
-                  <span class="span-icone">
-                    <i class="faq-icon bi bi-question-circle"></i>
-                  </span>
-                  <a class="nav-link">
-                    {{ $t("assurancefaq") }}
-                  </a>
-                  <span class="span-icone-right">
-                    <i class="bi bi-caret-down-fill"></i>
-                  </span>
-                </p>
-                <div class="collapse" id="collapseExample">
-                  <div class="card card-body">
-                    {{ $t("assurancefaqrep") }}
-                  </div>
-                </div>
-              </div>
-              <!-- End Faq item-->
-              <div class="faq-item">
-                <p
-                  class="param-div"
-                  data-bs-toggle="collapse"
-                  href="#collapse"
-                  role="button"
-                  aria-expanded="false"
-                  aria-controls="collapse"
-                >
-                  <span class="span-icone">
-                    <i class="faq-icon bi bi-question-circle"></i>
-                  </span>
-                  <a class="nav-link">
-                    {{ $t("reservefaq") }}
-                  </a>
-                  <span class="span-icone-right">
-                    <i class="bi bi-caret-down-fill"></i>
-                  </span>
-                </p>
-                <div class="collapse" id="collapse">
-                  <div class="card card-body">
-                    {{ $t("reservefasrep") }}
-                  </div>
-                </div>
-              </div>
-              <!-- End Faq item-->
+
             </div>
           </div>
 
@@ -118,8 +72,26 @@
     </section>
   </div>
 </template>
+<script setup>
+import { ref } from "vue";
+// Liste des questions-réponses
+const faqItems = ref([
+  { question: "conditionlouerfaq", answer: "conditionlouerfaqrep" },
+  { question: "assurancefaq", answer: "assurancefaqrep" },
+  { question: "reservefaq", answer: "reservefasrep" },
+]);
+// Gestion dynamique des icônes
+const icons = ref(Array(faqItems.value.length).fill("bi bi-chevron-up"));
+
+const toggleIcon = (index) => {
+  icons.value[index] =
+    icons.value[index] === "bi bi-chevron-up"
+      ? "bi bi-chevron-down"
+      : "bi bi-chevron-up";
+};
+</script>
 <style scoped>
-.faq{
+.faq {
   padding: 50px 0;
   margin-top: 80px;
 }
@@ -148,18 +120,17 @@
   padding: 10px 0;
   color: #ffbf00;
 }
-.span-icone-right{
+.span-icone-right {
   position: absolute;
   right: 20px;
 }
 .nav-link {
   color: #333;
 }
-.param-text{
+.param-text {
   text-align: justify;
 }
-a:hover{
+a:hover {
   color: #ffbf00;
 }
-
 </style>
