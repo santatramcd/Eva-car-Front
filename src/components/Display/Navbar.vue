@@ -203,7 +203,7 @@ const isOpen = ref(false);
 }
 // navbar animation
 .hamburger-menu {
-  width: 30px;
+  // width: 30px;
   height: 30px;
   display: flex;
   flex-direction: column;
@@ -235,6 +235,7 @@ const isOpen = ref(false);
 }
 .navbar-toggler{
   border: none;
+  padding: 0!important;
 }
 .navbar-toggler:focus,
 .navbar-toggler:active {
