@@ -53,9 +53,17 @@
           aria-controls="navbarNavDropdown"
           aria-expanded="false"
           aria-label="Toggle navigation"
-          @click="toggleButtonText"
         >
-          <i :class="buttonIconClass"></i>
+          <div
+            id="menu"
+            class="hamburger-menu"
+            :class="{ active: isOpen }"
+            @click="isOpen = !isOpen"
+          >
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
@@ -133,18 +141,8 @@ const contact = async () => {
 const cgv = async () => {
   router.push("/cgv");
 };
-
 import { ref } from "vue";
-
-const buttonIconClass = ref("bi bi-list");
-
-function toggleButtonText() {
-  if (buttonIconClass.value === "bi bi-list") {
-    buttonIconClass.value = "bi bi-x";
-  } else {
-    buttonIconClass.value = "bi bi-list";
-  }
-}
+const isOpen = ref(false);
 </script>
 <style scoped lang="scss">
 .collapse {
@@ -193,7 +191,7 @@ function toggleButtonText() {
   width: 30px;
   margin-top: -3px;
 }
-.langage li a{
+.langage li a {
   color: #333;
 }
 .div-lang-i18 {
@@ -202,6 +200,47 @@ function toggleButtonText() {
   padding-top: 20px;
   flex-wrap: wrap;
   align-content: center;
+}
+// navbar animation
+.hamburger-menu {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  position: relative;
+}
+
+.line {
+  width: 40px;
+  height: 5px;
+  background: #333;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Active state */
+.hamburger-menu.active .line:nth-child(1) {
+  transform: translateY(12.5px) rotate(45deg);
+}
+
+.hamburger-menu.active .line:nth-child(2) {
+  opacity: 0;
+  width: 36px;
+}
+
+.hamburger-menu.active .line:nth-child(3) {
+  transform: translateY(-12.5px) rotate(-45deg);
+}
+.navbar-toggler{
+  border: none;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: none !important; /* Supprime le contour bleu */
+  box-shadow: none !important; /* Supprime l'ombre */
+  border: none !important; /* Supprime la bordure */
 }
 @media (max-width: 1063px) {
   .navbar-nav {
