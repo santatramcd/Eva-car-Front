@@ -1,7 +1,7 @@
 <template>
   <div>
     <nav
-      class="navbar fixed-top navbar-expand-lg navbar-light"
+      class="navbar navbar-expand-lg navbar-light"
       style="background-color: #fff"
     >
       <div class="container-fluid cont-padd">
@@ -44,7 +44,16 @@
             </li>
           </ul>
         </div>
-        <button class="navbar-toggler" type="button">
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <div
             id="menu"
             class="hamburger-menu"
@@ -56,35 +65,26 @@
             <div class="line"></div>
           </div>
         </button>
-        <div class="collapses navbar-collapses" :class="{ active: isOpen }">
-          <span class="span-image">
-            <img src="../../../public/image/logo-black-2.png" alt="logo" />
-          </span>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#" @click="home"
-                ><i class="bi bi-house-door"></i>{{ $t("evacar") }}</a
-              >
+              <a class="nav-link" href="#" @click="home">{{ $t("evacar") }}</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" @click="about"
-                ><i class="bi bi-tag"></i>{{ $t("carsprice") }}</a
-              >
+              <a class="nav-link" href="#" @click="about">{{
+                $t("carsprice")
+              }}</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" @click="work"
-                ><i class="bi bi-question-diamond"></i>FAQ</a
-              >
+              <a class="nav-link" href="#" @click="work">FAQ</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" @click="cgv"
-                ><i class="bi bi-gear"></i>{{ $t("cgv") }}</a
-              >
+              <a class="nav-link" href="#" @click="cgv">{{ $t("cgv") }}</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" @click="contact"
-                ><i class="bi bi-telephone"></i>{{ $t("contact") }}</a
-              >
+              <a class="nav-link" href="#" @click="contact">{{
+                $t("contact")
+              }}</a>
             </li>
             <li class="nav-item dropdown div-langage">
               <a
@@ -116,22 +116,11 @@
               </ul>
             </li>
           </ul>
-          <ul className="div-ov-icn">
-            <li>
-              <a href="#"><i class="bi bi-facebook"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
-            </li>
-          </ul>
         </div>
       </div>
     </nav>
-    <div class="overlay" :class="{ show: isOpen }" @click="toggleMenu"></div>
   </div>
+  <div class="navbar-nav"></div>
 </template>
 <script setup>
 import { useRouter } from "vue-router";
@@ -154,20 +143,16 @@ const cgv = async () => {
 };
 import { ref } from "vue";
 const isOpen = ref(false);
-
-const toggleMenu = () => {
-  isOpen.value = !isOpen.value;
-};
 </script>
 <style scoped lang="scss">
-.collapses {
+.collapse {
   width: 100% !important;
   justify-content: center !important;
 }
 
 .navbar-nav {
   width: 90% !important;
-  display: flex;
+  display: flex !important;
   justify-content: space-around !important;
 }
 .logo {
@@ -225,7 +210,6 @@ const toggleMenu = () => {
   justify-content: space-between;
   cursor: pointer;
   position: relative;
-  z-index: 1000;
 }
 
 .line {
@@ -259,53 +243,6 @@ const toggleMenu = () => {
   box-shadow: none !important; /* Supprime l'ombre */
   border: none !important; /* Supprime la bordure */
 }
-.span-image {
-  display: none;
-}
-.overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  transition: opacity 0.3s ease;
-  opacity: 0;
-  z-index: 900;
-}
-
-.overlay.show {
-  display: block;
-  opacity: 1;
-}
-
-.nav-link i {
-  display: none;
-}
-body:has(.overlay.show) .drapeau {
-  opacity: 0.5;
-}
-body:has(.overlay.show) .cont-padd {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-.div-ov-icn {
-  display: none;
-}
-.div-ov-icn li {
-  list-style: none;
-  border: 1px solid #ffbf00;
-  border-radius: 50%;
-}
-.div-ov-icn li a {
-  color: #ffbf00;
-}
-.div-ov-icn li i {
-  display: block;
-  font-size: 30px;
-  font-weight: 700;
-  margin: 4px 11px;
-}
 @media (max-width: 1063px) {
   .navbar-nav {
     width: 100% !important;
@@ -317,10 +254,10 @@ body:has(.overlay.show) .cont-padd {
 }
 @media (max-width: 991px) {
   .cont-padd {
-    padding: 0;
+    padding: 15px;
   }
   .nav-item {
-    // background-color: #ffbf00;
+    background-color: #ffbf00;
     padding-left: 8px;
     margin: 5px 0;
   }
@@ -330,8 +267,11 @@ body:has(.overlay.show) .cont-padd {
   .nav-item a:hover {
     color: #fff;
   }
+  .navbar-nav {
+    margin-top: 10px;
+  }
   .navbar-light .navbar-nav .nav-link {
-    color: #000000;
+    color: #fff;
   }
   .logo {
     width: 80px;
@@ -343,69 +283,5 @@ body:has(.overlay.show) .cont-padd {
   .div-langage {
     display: none;
   }
-  .navbar-nav {
-    display: block;
-  }
-  /* Ajoutez ceci dans votre fichier CSS */
-  .navbar-collapses {
-    transition: transform 0.3s ease;
-    transform: translateX(-100%);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 300px !important;
-    height: 100vh !important;
-    background: #fff;
-    z-index: 1000;
-  }
-  .navbar-collapses.active {
-    transform: translateX(0); /* Afficher le menu */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 300px !important;
-    height: 100vh !important;
-  }
-  .container-fluid.cont-padd {
-    padding: 15px !important;
-  }
-  .span-image {
-    // background: red;
-    width: 100%;
-    /* height: 178px; */
-    padding: 20px;
-    display: inline-block;
-  }
-  .span-image img {
-    width: 50%;
-  }
-  .nav-link {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    padding: 10px;
-    font-size: 18 px;
-    /* background-color: red; */
-  }
-  .nav-link i {
-    display: block;
-    font-size: 24px;
-    margin-right: 18px;
-    color: #ffbf00;
-  }
-  .navbar {
-    padding: 0;
-  }
-  .div-ov-icn {
-  /* background: red; */
-  position: absolute;
-  left: 0;
-  width: 100%;
-  display: flex;
-  bottom: 25px;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding: 0;
-}
 }
 </style>
