@@ -194,4 +194,9 @@ footer {
   visibility: hidden;
   transform: translateY(50px);
 }
+@media (max-width: 996px) {
+.div-fixed {
+  right: 30px;
+}
+}
 </style>
