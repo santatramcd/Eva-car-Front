@@ -177,7 +177,7 @@ onUnmounted(() => {
   justify-content: center !important;
 }
 .navbar-light .navbar-nav .nav-link {
-  color: #000000;
+  color: #333;
 }
 .navbar-nav {
   width: 90% !important;
@@ -319,7 +319,7 @@ header {
   width: 100%;
   top: 0;
   left: 0;
-  background: transparent;
+  background: #fff;
   transition: all 0.3s ease-in-out;
   padding: 0;
   z-index: 100;
