@@ -1,9 +1,6 @@
 <template>
-  <div>
-    <nav
-      class="navbar fixed-top navbar-expand-lg navbar-light"
-      style="background-color: #fff"
-    >
+  <header :class="{ 'navbar-shrink': isShrunk }" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid cont-padd">
         <a class="navbar-brand" href="#" @click="home"
           ><img
@@ -131,7 +128,7 @@
       </div>
     </nav>
     <div class="overlay" :class="{ show: isOpen }" @click="toggleMenu"></div>
-  </div>
+  </header>
 </template>
 <script setup>
 import { useRouter } from "vue-router";
@@ -158,13 +155,30 @@ const isOpen = ref(false);
 const toggleMenu = () => {
   isOpen.value = !isOpen.value;
 };
+import { onMounted, onUnmounted } from "vue";
+
+const isShrunk = ref(false);
+
+const navbarShrink = () => {
+  isShrunk.value = window.scrollY > 0;
+};
+
+onMounted(() => {
+  window.addEventListener("scroll", navbarShrink);
+});
+
+onUnmounted(() => {
+  window.removeEventListener("scroll", navbarShrink);
+});
 </script>
 <style scoped lang="scss">
 .collapses {
   width: 100% !important;
   justify-content: center !important;
 }
-
+.navbar-light .navbar-nav .nav-link {
+  color: #000000;
+}
 .navbar-nav {
   width: 90% !important;
   display: flex;
@@ -283,12 +297,6 @@ const toggleMenu = () => {
 .nav-link i {
   display: none;
 }
-body:has(.overlay.show) .drapeau {
-  opacity: 0.5;
-}
-body:has(.overlay.show) .cont-padd {
-  background-color: rgba(0, 0, 0, 0.5);
-}
 .div-ov-icn {
   display: none;
 }
@@ -306,6 +314,24 @@ body:has(.overlay.show) .cont-padd {
   font-weight: 700;
   margin: 4px 11px;
 }
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+  padding: 0;
+  z-index: 100;
+}
+
+.navbar-shrink {
+  background: #333;
+  padding: 0;
+  .navbar-light .navbar-nav .nav-link {
+    color: #fff;
+  }
+}
 @media (max-width: 1063px) {
   .navbar-nav {
     width: 100% !important;
@@ -315,6 +341,15 @@ body:has(.overlay.show) .cont-padd {
     width: auto !important;
   }
 }
+@media (max-width: 996px) {
+  .navbar-shrink {
+  background: #fff;
+  .navbar-light .navbar-nav .nav-link {
+    color: #000000;
+  }
+}
+}
+
 @media (max-width: 991px) {
   .cont-padd {
     padding: 0;
@@ -397,15 +432,15 @@ body:has(.overlay.show) .cont-padd {
     padding: 0;
   }
   .div-ov-icn {
-  /* background: red; */
-  position: absolute;
-  left: 0;
-  width: 100%;
-  display: flex;
-  bottom: 25px;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding: 0;
-}
+    /* background: red; */
+    position: absolute;
+    left: 0;
+    width: 100%;
+    display: flex;
+    bottom: 25px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0;
+  }
 }
 </style>
