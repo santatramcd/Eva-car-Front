@@ -28,7 +28,7 @@
 <script setup></script>
 <style scoped>
 .div-header {
-  margin-top: 100px;
+  margin-top: 120px;
 }
 h2 {
   color: #716d6e;

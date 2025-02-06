@@ -132,7 +132,7 @@ const VoitureBtn = () => {
 <style lang="scss" scoped>
 .divcont {
   //   padding: 10px 50px;
-  margin-top: 80px;
+  margin-top: 120px;
 }
 .divicol {
   background-color: #f5f5f5;

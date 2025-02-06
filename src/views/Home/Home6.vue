@@ -42,7 +42,7 @@
 <script setup></script>
 <style scoped>
 .div-margin {
-  margin-top: 80px;
+  margin-top: 120px;
 }
 h2 {
   padding: 40px 0;

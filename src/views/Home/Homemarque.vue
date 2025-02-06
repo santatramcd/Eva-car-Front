@@ -59,7 +59,7 @@ const slides = [
 <style lang="scss" scoped>
 .divmarque {
   background-color: #fff;
-  margin-top: 100px;
+  margin-top: 120px;
   margin-bottom: 80px;
 }
 .divcont {

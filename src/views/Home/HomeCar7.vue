@@ -75,7 +75,7 @@
 <script setup></script>
 <style scoped>
 .div-mar-tp {
-  margin-top: 80px;
+  margin-top: 120px;
 }
 .head-car {
   color: #716d6e;

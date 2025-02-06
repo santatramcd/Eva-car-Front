@@ -98,9 +98,42 @@
         </div>
       </div>
     </footer>
+    <div 
+    class="div-fixed" 
+    :class="{ show: isVisible, hide: !isVisible }" 
+    @click="scrollToTop"
+  >
+    <a href="#">
+      <i class="bi bi-chevron-up"></i>
+    </a>
+  </div>
   </div>
 </template>
-<script setup></script>
+<script setup>
+import { ref, onMounted, onUnmounted } from "vue";
+
+const isVisible = ref(false);
+
+// Fonction pour gérer le scroll
+const handleScroll = () => {
+  isVisible.value = window.scrollY > 200;
+};
+
+// Ajouter l'écouteur d'événements au montage du composant
+onMounted(() => {
+  window.addEventListener("scroll", handleScroll);
+});
+
+// Supprimer l'écouteur d'événements lors du démontage du composant
+onUnmounted(() => {
+  window.removeEventListener("scroll", handleScroll);
+});
+
+// Fonction pour remonter en haut
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
+</script>
 <style scoped>
 img {
   width: 90px;
@@ -125,5 +158,40 @@ footer {
   flex-wrap: wrap;
   gap: 20px;
   font-size: 1.4rem;
+}
+.div-fixed {
+  position: fixed;
+  text-align: center;
+  cursor: pointer;
+  z-index: 99;
+  width: 2.1em;
+  height: 2.1em;
+  line-height: 2.1;
+  border-radius: 2px;
+  outline: inherit;
+  right: 60px;
+  bottom: 30px;
+  background-color: #ffbf00;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transform: translateY(50px);
+}
+
+.div-fixed a {
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.div-fixed.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.div-fixed.hide {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(50px);
 }
 </style>

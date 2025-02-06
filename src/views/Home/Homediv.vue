@@ -52,7 +52,7 @@
 
 <style scoped>
 .divcont {
-  padding-top: 100px;
+  margin-top: 120px;
 }
 .row {
   align-items: stretch;

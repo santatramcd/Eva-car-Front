@@ -93,7 +93,7 @@ const toggleIcon = (index) => {
 <style scoped>
 .faq {
   padding: 50px 0;
-  margin-top: 80px;
+  margin-top: 120px;
 }
 .param-div {
   background-color: #ffffff;
