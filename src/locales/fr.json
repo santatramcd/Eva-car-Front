@@ -161,6 +161,8 @@
     "5-Assurance" : "5 - Assurance",
     "5-1assurance" : "Tous les véhicules sont entièrement couverts par une assurance, y compris en ce qui concerne la responsabilité civile et la protection contre le vol de véhicule. Une franchise peut être nécessaire (see 5.4.1). La perte ou l'endommagement des clés de la voiture et les coûts qui en résultent et la perte ou l'endommagement du système GPS, ainsi que les effets personnels ne sont pas couverts. Vous pouvez consulter ci-dessous les clauses spécifiques à certains pays :",
     "5-1-1dommages" : "Aux Seychelles, les dommages sous la voiture et les dommages occasionnés sur les rétroviseurs extérieurs ne sont couverts que par le programme d'assurance SCDW+. En cas d'alerte cyclone de niveau trois ou plus, le véhicule ne peut être utilisé que dans les deux heures maximum qui suivent le déclenchement de l'alerte.",
-    "5-1-2assurance" : "Aux Seychelles, l'assurance ne couvre pas les dommages sous la voiture et les pneus endommagés."
+    "5-1-2assurance" : "Aux Seychelles, l'assurance ne couvre pas les dommages sous la voiture et les pneus endommagés.",
+    "3-2-1vehicule" : "Le véhicule ne doit être conduit que par le client lui-même. Des conducteurs additionnels ne sont acceptés que si leurs noms ont été inscrits sur le contrat de location lors de la livraison. Ces conducteurs doivent respecter les règles mentionnées plus haut relatives au permis de conduire et à l'âge.",
+    "3-2-2conducteurs" : "Tous les conducteurs doivent être présents lors de la signature du contrat de location. Pour l'ajout ultérieur d'un autre conducteur, le client et le nouveau conducteur doivent se présenter à l'agence de location locale pour être inscrits."
   }
 }

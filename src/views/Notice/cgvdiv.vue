@@ -137,6 +137,16 @@ const dataAuto = [
     description: `notice.3-1prise`,
   },
   {
+    number: "3-2-1",
+    title: "",
+    description: `notice.3-2-1vehicule`,
+  },
+  {
+    number: "3-2-2",
+    title: "",
+    description: `notice.3-2-2conducteurs`,
+  },
+  {
     number: "4-1",
     title: "notice.4-tarifs",
     description: `notice.4-1paiement`,

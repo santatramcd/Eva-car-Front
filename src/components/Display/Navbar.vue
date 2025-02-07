@@ -326,8 +326,11 @@ header {
 }
 
 .navbar-shrink {
-  background: #333;
+  // background: #333;
   padding: 0;
+  background-color: #0009;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   .navbar-light .navbar-nav .nav-link {
     color: #fff;
   }
@@ -343,11 +346,13 @@ header {
 }
 @media (max-width: 996px) {
   .navbar-shrink {
-  background: #fff;
-  .navbar-light .navbar-nav .nav-link {
-    color: #000000;
+    background: #fff;
+    backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+    .navbar-light .navbar-nav .nav-link {
+      color: #000000;
+    }
   }
-}
 }
 
 @media (max-width: 991px) {
