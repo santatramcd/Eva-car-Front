@@ -36,7 +36,9 @@
         <!-- Contenu de la page avec les sections -->
         <div class="col-md-8">
           <div v-for="(item, index) in filteredData" :key="index">
-            <h4 class="title-header" :id="item.title">{{ $t(item.title) || "" }}</h4>
+            <h4 class="title-header" :id="item.title">
+              {{ $t(item.title) || "" }}
+            </h4>
             <table class="table">
               <tbody>
                 <tr>
@@ -213,9 +215,8 @@ onMounted(() => {
 });
 </script>
 
-
 <style lang="scss" scoped>
-th{
+th {
   width: 60px;
 }
 .title-header {
@@ -223,7 +224,7 @@ th{
   color: #2d3e52;
   padding: 5px 20px;
 }
-.lisearch a{
+.lisearch a {
   color: #2d3e52;
 }
 .active a {

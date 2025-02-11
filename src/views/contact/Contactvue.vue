@@ -10,7 +10,7 @@
               <span class="span-col"><i class="bi bi-telephone-fill"></i></span>
             </span>
             <div class="div-nm-cnt">
-              <h4>+49-931-663984-98</h4>
+              <h4>+49-000-000000-00</h4>
               <span class="col-name">Lorem ipsum dolor sit amet.</span>
             </div>
           </div>
