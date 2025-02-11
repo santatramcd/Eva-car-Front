@@ -152,6 +152,11 @@ const dataAuto = [
     description: `notice.4-1paiement`,
   },
   {
+    number: "4-2",
+    title: "",
+    description: `notice.4-2essence`,
+  },
+  {
     number: "5-1",
     title: "notice.5-Assurance",
     description: `notice.5-1assurance`,
@@ -211,7 +216,7 @@ onMounted(() => {
 
 <style lang="scss" scoped>
 th{
-  min-width: 60px;
+  width: 60px;
 }
 .title-header {
   font-size: 25px;

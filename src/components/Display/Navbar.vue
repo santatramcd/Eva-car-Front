@@ -348,7 +348,7 @@ header {
   .navbar-shrink {
     background: #fff;
     backdrop-filter: none;
-  -webkit-backdrop-filter: none;
+    -webkit-backdrop-filter: none;
     .navbar-light .navbar-nav .nav-link {
       color: #000000;
     }
