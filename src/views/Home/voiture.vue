@@ -153,7 +153,7 @@ img {
   margin: 20px 0;
 }
 .btn-primary {
-  background-color: #ffbf00;
+  background-color: #007bff;
   border: none;
 }
 .rating {
