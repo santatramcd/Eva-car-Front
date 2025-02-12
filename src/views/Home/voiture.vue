@@ -44,7 +44,7 @@
             </li>
           </ul>
           <div class="d-flex action">
-            <a href="contact.html" class="btn btn-primary">
+            <a href="#" class="btn btn-primary">
               <router-link class="nav-link col-white" to="/reserve"
                 >Rent Now</router-link
               >

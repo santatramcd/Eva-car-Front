@@ -64,7 +64,7 @@
                   </h6>
                 </div>
               </div>
-              <a href="" class="btn btn-primary px-5 py-3 btn-border-radius" @click="about"
+              <a href="#" class="btn btn-primary px-5 py-3 btn-border-radius" @click="about"
                 >Plus d'informations</a
               >
             </div>
