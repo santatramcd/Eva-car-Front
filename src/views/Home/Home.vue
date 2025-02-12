@@ -12,7 +12,6 @@
     <Homefaq />
     <Homeproduct data-aos="fade-up" />
     <Homemarque data-aos="fade-up" />
-    <Maps data-aos="fade-up"/>
   </div>
 </template>
 <script setup>
@@ -26,7 +25,6 @@ import Homelocat from "../Home/location.vue";
 import HomeCar from "../Home/HomeCar7.vue";
 import HomegpsVue from "./Homegps.vue";
 import Homemarque from "../Home/Homemarque.vue";
-import Maps from "../contact/maps.vue";
 import Homefaq from "./Homefaq.vue";
 import Video from "../Home/video.vue"
 AOS.init({
