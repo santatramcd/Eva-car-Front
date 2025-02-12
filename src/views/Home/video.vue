@@ -305,4 +305,9 @@ const about = async () => {
 p {
   text-align: justify;
 }
+@media (max-width: 400px) {
+    .wow{
+        padding: 0;
+    }
+}
 </style>
