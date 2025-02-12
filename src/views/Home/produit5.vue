@@ -8,7 +8,7 @@
       </div>
     </div>
     <div>
-      <div class="container">
+      <!-- <div class="container">
         <div class="row">
           <div
             class="col-lg-4 card div-hover"
@@ -36,53 +36,11 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
 <script setup>
-import { ref } from "vue";
-
-const data = ref([
-  {
-    title: "Suzuki Alto",
-    details: "35 kW, 800 ccm • Manual",
-    price: "€143.50",
-    picture: `https://d12ittivwictyd.cloudfront.net/images/cars/suzuki-alto.png`,
-  },
-  {
-    title: "Suzuki Alto K10",
-    details: "48 kW, 1200 ccm • Automatic",
-    price: "€143.50",
-    picture: `https://d12ittivwictyd.cloudfront.net/images/cars/suzuki-alto-k10.png`,
-  },
-  {
-    title: "Kia Picanto",
-    details: "51 kW, 998 ccm • Automatic",
-    price: "€172.35",
-    picture: `https://d12ittivwictyd.cloudfront.net/images/cars/kia-picanto.png`,
-  },
-  {
-    title: "Suzuki Spresso",
-    details: "49 kW, 1000 ccm • Manual",
-    price: "€172.35",
-    picture: `https://d12ittivwictyd.cloudfront.net/images/cars/suzuki-spresso.png`,
-  },
-  {
-    title: "Mitsubishi Mirage",
-    details: "59 kW, 1100 ccm • Automatic",
-    price: "€172.35",
-    picture: `https://d12ittivwictyd.cloudfront.net/images/cars/mitsubishi-mirage-2014.png`,
-  },
-  {
-    title: "Renault Kwid Climber",
-    details: "49 kW, 999 ccm • Automatic",
-    price: "€172.35",
-    picture: `https://d12ittivwictyd.cloudfront.net/images/cars/renault-kwid-climber.png`,
-  },
-]);
-
-const filteredData = ref(data.value);
 </script>
 <style scoped>
 .div-col {

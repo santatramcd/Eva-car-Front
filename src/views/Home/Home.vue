@@ -11,6 +11,7 @@
     <Homelocat data-aos="fade-up" />
     <Homefaq />
     <Homeproduct data-aos="fade-up" />
+    <Voiture data-aos="fade-up"/>
     <Homemarque data-aos="fade-up" />
   </div>
 </template>
@@ -26,7 +27,8 @@ import HomeCar from "../Home/HomeCar7.vue";
 import HomegpsVue from "./Homegps.vue";
 import Homemarque from "../Home/Homemarque.vue";
 import Homefaq from "./Homefaq.vue";
-import Video from "../Home/video.vue"
+import Video from "../Home/video.vue";
+import Voiture from "../Home/voiture.vue"
 AOS.init({
   offset: 400,
   duration: 1000,
