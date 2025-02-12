@@ -305,6 +305,9 @@ const about = async () => {
 p {
   text-align: justify;
 }
+.btn-border-radius {
+    border-radius: 25% 10%;
+}
 @media (max-width: 400px) {
     .wow{
         padding: 0;
