@@ -168,6 +168,9 @@ cursor: pointer;
 opacity: 0;
 width: 100%;
 }
+.nav-link:hover{
+    color: #fff;
+}
 @media (max-width: 991px) {
   .cont-form-head {
       margin-top: -120px;

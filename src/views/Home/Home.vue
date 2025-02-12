@@ -3,6 +3,7 @@
     <HomeHead />
     <Homeslider />
     <HomeDiv data-aos="fade-up" />
+    <Video data-aos="fade-up" />
     <HomeCar data-aos="fade-up" />
     <HomegpsVue data-aos="fade-up" />
     <Home data-aos="fade-up" />
@@ -27,6 +28,7 @@ import HomegpsVue from "./Homegps.vue";
 import Homemarque from "../Home/Homemarque.vue";
 import Maps from "../contact/maps.vue";
 import Homefaq from "./Homefaq.vue";
+import Video from "../Home/video.vue"
 AOS.init({
   offset: 400,
   duration: 1000,
