@@ -164,4 +164,8 @@ img {
 .titre-voiture {
   color: #007bff;
 }
+.col-white:hover,
+.col-white{
+    color: #fff;
+}
 </style>
