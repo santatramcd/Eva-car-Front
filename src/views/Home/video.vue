@@ -22,23 +22,18 @@
               <h4
                 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
               >
-                À propos de nous
+               {{$t("apropos")}}
               </h4>
               <h1 class="text-dark mb-4 display-5">
-                Louez votre voiture avec Eva Car Rental aux Seychelles
+              {{$t("louez")}}
               </h1>
               <p class="text-dark mb-4">
-                Chez Eva Car Rental, nous offrons une expérience de location de
-                voiture exceptionnelle aux visiteurs des Seychelles. Que vous
-                soyez ici pour des vacances ou pour affaires, notre flotte de
-                véhicules bien entretenus vous permettra de découvrir ces îles
-                paradisiaques à votre rythme.
+                {{$t("ChezEva")}}
               </p>
               <div class="row mb-4">
                 <div class="col-lg-6">
                   <h6 class="mb-3">
-                    <i class="bi bi-check-circle-fill me-2"></i>Véhicules
-                    récents et fiables
+                    <i class="bi bi-check-circle-fill me-2"></i>{{$t("vehiculerecent")}}
                   </h6>
                   <h6 class="mb-3">
                     <i class="bi bi-check-circle-fill me-2 text-primary"></i

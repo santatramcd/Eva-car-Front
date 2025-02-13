@@ -165,5 +165,9 @@
     "3-2-1vehicule" : "Le véhicule ne doit être conduit que par le client lui-même. Des conducteurs additionnels ne sont acceptés que si leurs noms ont été inscrits sur le contrat de location lors de la livraison. Ces conducteurs doivent respecter les règles mentionnées plus haut relatives au permis de conduire et à l'âge.",
     "3-2-2conducteurs" : "Tous les conducteurs doivent être présents lors de la signature du contrat de location. Pour l'ajout ultérieur d'un autre conducteur, le client et le nouveau conducteur doivent se présenter à l'agence de location locale pour être inscrits.",
     "4-2essence" : "Le prix de l'essence n'est pas inclus dans les frais de location."
-  }
+  },
+  "apropos" : "À propos de nous",
+  "louez" : "Louez votre voiture avec Eva Car Rental aux Seychelles",
+  "ChezEva" : "Chez Eva Car Rental, nous offrons une expérience de location de voiture exceptionnelle aux visiteurs des Seychelles. Que vous soyez ici pour des vacances ou pour affaires, notre flotte de véhicules bien entretenus vous permettra de découvrir ces îles paradisiaques à votre rythme.",
+  "vehiculerecent" : "Véhicules récents et fiables"
 }

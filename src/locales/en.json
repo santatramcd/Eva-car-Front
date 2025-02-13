@@ -166,5 +166,10 @@
     "3-2-1vehicule" : "The vehicle must only be driven by the customer himself. Additional drivers are only accepted if their names have been included on the rental contract upon delivery. These drivers must respect the rules mentioned above relating to driving license and age.",
     "3-2-2conducteurs" : "All drivers must be present when signing the rental contract. For the subsequent addition of another driver, the customer and the new driver must come to the local rental agency to be registered.",
     "4-2essence" : "The price of gasoline is not included in the rental fee."
-  }
+  },
+  "apropos" : "About Us",
+  "louez" : "Rent your car with Eva Car Rental in Seychelles",
+  "ChezEva" : "At Eva Car Rental, we offer an exceptional car rental experience to visitors to Seychelles. Whether you are here for vacation or business, our fleet of well-maintained vehicles will allow you to discover these paradise islands at your own pace.",
+  "vehiculerecent" : "Recent and reliable vehicles"
+
 }
