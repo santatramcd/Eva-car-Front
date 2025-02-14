@@ -37,25 +37,24 @@
                   </h6>
                   <h6 class="mb-3">
                     <i class="bi bi-check-circle-fill me-2 text-primary"></i
-                    >Service client attentionné
+                    >{{$t("service")}}
                   </h6>
                   <h6 class="mb-3">
                     <i class="bi bi-check-circle-fill me-2 text-secondary"></i
-                    >Tarifs compétitifs
+                    >{{$t("tarifs")}}
                   </h6>
                 </div>
                 <div class="col-lg-6">
                   <h6 class="mb-3">
-                    <i class="bi bi-check-circle-fill me-2"></i>Assurance
-                    incluse
+                    <i class="bi bi-check-circle-fill me-2"></i>{{$t("assurance")}}
                   </h6>
                   <h6 class="mb-3">
                     <i class="bi bi-check-circle-fill me-2 text-primary"></i
-                    >Flexibilité des horaires
+                    >{{$t("flexibilité")}}
                   </h6>
                   <h6>
                     <i class="bi bi-check-circle-fill me-2 text-secondary"></i
-                    >Livraison et reprise du véhicule
+                    >{{$t("livraisons")}}
                   </h6>
                 </div>
               </div>
