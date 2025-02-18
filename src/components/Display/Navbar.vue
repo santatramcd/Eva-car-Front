@@ -466,8 +466,6 @@ header {
     justify-content: space-evenly;
     padding: 0;
   }
-}
-@media (max-width: 400px) {
   .navbar-shrink {
     animation: none;
   }
