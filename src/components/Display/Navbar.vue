@@ -345,6 +345,12 @@ header {
   .navbar-light .navbar-nav .nav-link {
     color: #fff;
   }
+  nav.navbar.navbar-expand-lg.navbar-light {
+    padding: 0;
+  }
+  .logo{
+    width: 60px;
+  }
 }
 
 //
