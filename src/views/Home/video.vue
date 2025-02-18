@@ -22,43 +22,48 @@
               <h4
                 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
               >
-               {{$t("apropos")}}
+                {{ $t("apropos") }}
               </h4>
               <h1 class="text-dark mb-4 display-5">
-              {{$t("louez")}}
+                {{ $t("louez") }}
               </h1>
               <p class="text-dark mb-4">
-                {{$t("ChezEva")}}
+                {{ $t("ChezEva") }}
               </p>
               <div class="row mb-4">
                 <div class="col-lg-6">
                   <h6 class="mb-3">
-                    <i class="bi bi-check-circle-fill me-2"></i>{{$t("vehiculerecent")}}
+                    <i class="bi bi-check-circle-fill me-2"></i
+                    >{{ $t("vehiculerecent") }}
                   </h6>
                   <h6 class="mb-3">
                     <i class="bi bi-check-circle-fill me-2 text-primary"></i
-                    >{{$t("service")}}
+                    >{{ $t("service") }}
                   </h6>
                   <h6 class="mb-3">
                     <i class="bi bi-check-circle-fill me-2 text-secondary"></i
-                    >{{$t("tarifs")}}
+                    >{{ $t("tarifs") }}
                   </h6>
                 </div>
                 <div class="col-lg-6">
                   <h6 class="mb-3">
-                    <i class="bi bi-check-circle-fill me-2"></i>{{$t("assurance")}}
+                    <i class="bi bi-check-circle-fill me-2"></i
+                    >{{ $t("assurance") }}
                   </h6>
                   <h6 class="mb-3">
                     <i class="bi bi-check-circle-fill me-2 text-primary"></i
-                    >{{$t("flexibilité")}}
+                    >{{ $t("flexibilité") }}
                   </h6>
                   <h6>
                     <i class="bi bi-check-circle-fill me-2 text-secondary"></i
-                    >{{$t("livraisons")}}
+                    >{{ $t("livraisons") }}
                   </h6>
                 </div>
               </div>
-              <a href="#" class="btn btn-primary px-5 py-3 btn-border-radius" @click="about"
+              <a
+                href="#"
+                class="btn btn-primary px-5 py-3 btn-border-radius"
+                @click="about"
                 >Plus d'informations</a
               >
             </div>
@@ -300,11 +305,11 @@ p {
   text-align: justify;
 }
 .btn-border-radius {
-    border-radius: 25% 10%;
+  border-radius: 25% 10%;
 }
 @media (max-width: 400px) {
-    .wow{
-        padding: 0;
-    }
+  .wow {
+    padding: 0;
+  }
 }
 </style>

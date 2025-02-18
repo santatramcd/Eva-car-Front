@@ -325,16 +325,30 @@ header {
   z-index: 100;
 }
 
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .navbar-shrink {
-  // background: #333;
   padding: 0;
   background-color: #0009;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  animation: slideInFromTop 0.5s ease-out forwards;
   .navbar-light .navbar-nav .nav-link {
     color: #fff;
   }
 }
+
+//
 @media (max-width: 1063px) {
   .navbar-nav {
     width: 100% !important;
