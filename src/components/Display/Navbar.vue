@@ -338,12 +338,12 @@ header {
 
 .navbar-shrink {
   padding: 0;
-  background-color: #0009;
+  background-color: #ffffff;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   animation: slideInFromTop 0.5s ease-out forwards;
   .navbar-light .navbar-nav .nav-link {
-    color: #fff;
+    color: #000;
   }
   nav.navbar.navbar-expand-lg.navbar-light {
     padding: 0;
