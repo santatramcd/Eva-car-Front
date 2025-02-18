@@ -348,7 +348,7 @@ header {
   nav.navbar.navbar-expand-lg.navbar-light {
     padding: 0;
   }
-  .logo{
+  .logo {
     width: 60px;
   }
 }
@@ -465,6 +465,11 @@ header {
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 0;
+  }
+}
+@media (max-width: 400px) {
+  .navbar-shrink {
+    animation: none;
   }
 }
 </style>
