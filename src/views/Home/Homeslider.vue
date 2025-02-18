@@ -50,6 +50,7 @@
                   type="datetime-local"
                   class="formcont"
                   name="return_date"
+                  value="2025-02-20T14:30"
                 />
                 <span class="spandate"><i class="bi bi-clock"></i></span>
               </div>
@@ -61,6 +62,7 @@
                   type="datetime-local"
                   class="formcont"
                   name="return_date"
+                  value="2025-02-20T14:30"
                 />
                 <span class="spandate"><i class="bi bi-clock"></i></span>
               </div>
