@@ -1,86 +1,105 @@
 <template>
   <div>
-      <div class="container cont-form-head">
-          <div class="div-form">
-              <!-- <p class="tit-form">Remplissez ce formulaire pour connaître nos offres de location de voitures</p> -->
-              <form action="" class="form-head-search">
-                  <div class="row">
-                      <div class="col-lg-2 mt-2">
-                          <label>{{$t("lieudep")}}</label>
-                          <div class="divisionseardate">
-                              <select
-                                  class="select"
-                                  aria-label=".form-select-lg example"
-                              >
-                                  <option selected>
-                                      Open this select
-                                  </option>
-                                  <option value="1">One</option>
-                                  <option value="2">Two</option>
-                                  <option value="3">Three</option>
-                              </select>
-                              <span class="spandate"
-                                  ><i class="bi bi-caret-down-fill"></i
-                              ></span>
-                          </div>
-                      </div>
-                      <div class="col-lg-2 mt-2">
-                          <label>{{$t("lieuret")}}</label>
-                          <div class="divisionseardate">
-                              <select
-                                  class="select"
-                                  aria-label=".form-select-lg example"
-                              >
-                                  <option selected>
-                                      Open this select
-                                  </option>
-                                  <option value="1">One</option>
-                                  <option value="2">Two</option>
-                                  <option value="3">Three</option>
-                              </select>
-                              <span class="spandate"
-                                  ><i class="bi bi-caret-down-fill"></i
-                              ></span>
-                          </div>
-                      </div>
-                      <div class="col-lg-3 mt-2">
-                          <label>{{$t("dateheuredep")}}</label>
-                          <div class="divisionseardate">
-                              <input
-                                  type="datetime-local"
-                                  class="formcont"
-                                  name="return_date"
-                              />
-                              <span class="spandate"
-                                  ><i class="bi bi-clock"></i
-                              ></span>
-                          </div>
-                      </div>
-                      <div class="col-lg-3 mt-2">
-                          <label>{{$t("dateheureret")}}</label>
-                          <div class="divisionseardate">
-                              <input
-                                  type="datetime-local"
-                                  class="formcont"
-                                  name="return_date"
-                              />
-                              <span class="spandate"
-                                  ><i class="bi bi-clock"></i
-                              ></span>
-                          </div>
-                      </div>
-                      <div class="col-lg-2 mt-2">
-                          <label class="lab-sear">search</label>
-                          <button><router-link class="nav-link col-white" to="/about"
-                                      >{{$t("search")}}</router-link
-                                  ></button>
-                      </div>
-                  </div>
-              </form>
+    <div class="container cont-form-head">
+      <div class="div-form">
+        <!-- <p class="tit-form">Remplissez ce formulaire pour connaître nos offres de location de voitures</p> -->
+        <form action="" class="form-head-search">
+          <div class="row">
+            <div class="col-lg-2 mt-2">
+              <label>{{ $t("lieudep") }}</label>
+              <div class="divisionseardate">
+                <select
+                  class="select"
+                  aria-label=".form-select-lg example"
+                  v-model="selectedVilleDepart"
+                  id="ville-depart"
+                >
+                  <option value="">-- Choisir une ville --</option>
+                  <option v-for="ville in villes" :key="ville" :value="ville">
+                    {{ ville }}
+                  </option>
+                </select>
+                <span class="spandate"
+                  ><i class="bi bi-caret-down-fill"></i
+                ></span>
+              </div>
+            </div>
+            <div class="col-lg-2 mt-2">
+              <label>{{ $t("lieuret") }}</label>
+              <div class="divisionseardate">
+                <select
+                  class="select"
+                  aria-label=".form-select-lg example"
+                  v-model="selectedVilleRetour"
+                  id="ville-retour"
+                >
+                  <option value="">-- Choisir une ville --</option>
+                  <option v-for="ville in villes" :key="ville" :value="ville">
+                    {{ ville }}
+                  </option>
+                </select>
+                <span class="spandate"
+                  ><i class="bi bi-caret-down-fill"></i
+                ></span>
+              </div>
+            </div>
+            <div class="col-lg-3 mt-2">
+              <label>{{ $t("dateheuredep") }}</label>
+              <div class="divisionseardate">
+                <input
+                  type="datetime-local"
+                  class="formcont"
+                  name="return_date"
+                />
+                <span class="spandate"><i class="bi bi-clock"></i></span>
+              </div>
+            </div>
+            <div class="col-lg-3 mt-2">
+              <label>{{ $t("dateheureret") }}</label>
+              <div class="divisionseardate">
+                <input
+                  type="datetime-local"
+                  class="formcont"
+                  name="return_date"
+                />
+                <span class="spandate"><i class="bi bi-clock"></i></span>
+              </div>
+            </div>
+            <div class="col-lg-2 mt-2">
+              <label class="lab-sear">search</label>
+              <button>
+                <router-link class="nav-link col-white" to="/about">{{
+                  $t("search")
+                }}</router-link>
+              </button>
+            </div>
           </div>
+        </form>
       </div>
+    </div>
   </div>
 </template>
+<script>
+import { ref } from "vue";
+
+export default {
+  setup() {
+    // Liste des villes
+    const villes = ref([
+      "Antananarivo",
+      "Toamasina",
+      "Mahajanga",
+      "Fianarantsoa",
+    ]);
+
+    // Modèles de sélection pour ville de départ et retour
+    const selectedVilleDepart = ref("");
+    const selectedVilleRetour = ref("");
+
+    return { villes, selectedVilleDepart, selectedVilleRetour };
+  },
+};
+</script>
 <style scoped>
 .tit-form {
   /* text-align: center; */
@@ -104,6 +123,7 @@
 .form-head-search select,
 .form-head-search input {
   color: #333;
+  cursor: pointer;
 }
 .cont-form-head {
   margin-top: -100px;
@@ -156,24 +176,24 @@ button {
   height: 50px;
 }
 .formcont {
-/* border-radius: 8px; */
-height: 50px;
+  /* border-radius: 8px; */
+  height: 50px;
 }
 .formcont::-webkit-calendar-picker-indicator {
-position: absolute;
-z-index: 20;
-cursor: pointer;
-/* left: 15px; */
-/* font-size: 3rem; */
-opacity: 0;
-width: 100%;
+  position: absolute;
+  z-index: 20;
+  cursor: pointer;
+  /* left: 15px; */
+  /* font-size: 3rem; */
+  opacity: 0;
+  width: 100%;
 }
-.nav-link:hover{
-    color: #fff;
+.nav-link:hover {
+  color: #fff;
 }
 @media (max-width: 991px) {
   .cont-form-head {
-      margin-top: -120px;
+    margin-top: -120px;
   }
 }
 </style>

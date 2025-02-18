@@ -325,7 +325,6 @@ header {
   z-index: 100;
 }
 
-
 @keyframes slideInFromTop {
   0% {
     transform: translateY(-100%);
