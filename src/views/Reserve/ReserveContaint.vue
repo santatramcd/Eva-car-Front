@@ -342,10 +342,10 @@
           <hr class="mt-5" />
           <h2 class="h2coO mt-3">Informations de paiement</h2>
           <p class="pfacult">MODE DE PAIEMENT</p>
-          <div class="container-fluid mt-3">
+          <div>
             <div class="row">
               <!-- Première ligne -->
-              <div class="col-md-6 col-sm-12">
+              <div class="col-md-6 col-sm-12 mt-5">
                 <div class="divisinp">
                   <input
                     class="form-check-input"
@@ -372,7 +372,7 @@
                 </div>
               </div>
 
-              <div class="col-md-6 col-sm-12">
+              <div class="col-md-6 col-sm-12 mt-5">
                 <div class="divisinp">
                   <input
                     class="form-check-input"
@@ -400,7 +400,7 @@
 
             <div class="row">
               <!-- Deuxième ligne -->
-              <div class="col-md-6 col-sm-12">
+              <div class="col-md-6 col-sm-12 mt-5">
                 <div class="divisinp">
                   <input
                     class="form-check-input"
@@ -425,7 +425,7 @@
                 </div>
               </div>
 
-              <div class="col-md-6 col-sm-12">
+              <div class="col-md-6 col-sm-12 mt-5">
                 <div class="divisinp">
                   <input
                     class="form-check-input"
@@ -1033,6 +1033,7 @@ ul li {
   padding-top: 15px;
   padding-left: 10px;
   background-color: #e3e3e3;
+  height: 100%;
 }
 
 .spanlioption {
@@ -1162,5 +1163,10 @@ label {
 .addFranchise {
   color: #6dace6;
   cursor: pointer;
+}
+@media (max-width: 400px) {
+  .divpar{
+    margin-top: 50px;
+  }
 }
 </style>
