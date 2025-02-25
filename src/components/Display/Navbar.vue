@@ -70,7 +70,7 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#" @click="work"
-                ><i class="bi bi-question-diamond"></i>FAQ</a
+                ><i class="bi bi-exclamation-circle"></i>FAQ</a
               >
             </li>
             <li class="nav-item">
