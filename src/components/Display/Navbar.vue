@@ -337,11 +337,19 @@ header {
 }
 
 .navbar-shrink {
-  padding: 0;
-  background-color: #ffffff;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  animation: slideInFromTop 0.5s ease-out forwards;
+  // padding: 0;
+  // background-color: #ffffff;
+  // backdrop-filter: blur(10px);
+  // -webkit-backdrop-filter: blur(10px);
+  // animation: slideInFromTop 0.5s ease-out forwards;
+  background: rgba(255, 255, 255, 0.95);
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  -webkit-backface-visibility: hidden;
   .navbar-light .navbar-nav .nav-link {
     color: #000;
   }
