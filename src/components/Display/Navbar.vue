@@ -219,6 +219,7 @@ onUnmounted(() => {
 .drapeau {
   width: 30px;
   margin-top: -3px;
+  margin-right: 5px;
 }
 .langage li a {
   color: #333;
