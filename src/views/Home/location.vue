@@ -45,7 +45,7 @@
   z-index: 5;
   top: 0;
   left: 75%;
-  width: 25%;
+  width: 25.5%;
   height: 100%;
   background-color: red;
   display: flex;
