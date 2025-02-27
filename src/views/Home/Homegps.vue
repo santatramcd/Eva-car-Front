@@ -40,8 +40,10 @@
                   <p>
                     {{ $t("malgréavis") }}
                   </p>
-                  <button class="button" @click="VoitureBtn">
-                    {{ $t("reserve") }}
+                  <button class="button">
+                    <a href="#" @click="VoitureBtn">
+                      {{ $t("reserve") }}
+                    </a>
                   </button>
                 </div>
                 <div class="col-md-6 colonne1">
@@ -60,8 +62,10 @@
                   <p>
                     {{ $t("pourdecouv") }}
                   </p>
-                  <button class="button" @click="VoitureBtn">
-                    {{ $t("reserve") }}
+                  <button class="button">
+                    <a href="#" @click="VoitureBtn">
+                      {{ $t("reserve") }}
+                    </a>
                   </button>
                 </div>
                 <div class="col-md-6 colonne1">
@@ -80,8 +84,10 @@
                   <p>
                     {{ $t("seychelleloc") }}
                   </p>
-                  <button class="button" @click="VoitureBtn">
-                    {{ $t("reserve") }}
+                  <button class="button">
+                    <a href="#" @click="VoitureBtn">
+                      {{ $t("reserve") }}
+                    </a>
                   </button>
                 </div>
                 <div class="col-md-6 colonne1">
@@ -161,6 +167,9 @@ p {
   font-weight: 600;
   margin-top: 20px;
 }
+.button a{
+  color: #fff;
+}
 img {
   width: 90%;
 }
@@ -184,7 +193,7 @@ img {
   .colonne1 {
     padding: 40px 0px;
   }
-  .carousel-indicators{
+  .carousel-indicators {
     bottom: -10px;
   }
 }
