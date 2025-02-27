@@ -133,7 +133,7 @@
   margin-top: 30px;
 } */
 .card-icn {
-  background-color: #ededed;
+  background-color: #f5f5f5;
   padding: 30px;
   border: 1px solid rgba(2, 1, 1, 0);
   border-radius: 0px;
