@@ -10,13 +10,16 @@
           </div>
           <div class="col-md-6 divisquest">
             <ul class="d-flex">
-              <a @click="locationbtn">
+              <a @click="home">
                 <li class="li">ACCUEIL</li>
               </a>
-              <a @click="locationbtn">
+              <a href="#">
                 <li class="li">LOCATION DE VOITURES AU SEYCHELLES</li>
               </a>
-              <li class="li1">CONTACTEZ-NOUS</li>
+              <a @click="contact">
+                <li class="li1">CONTACTEZ-NOUS</li>
+              </a>
+              
             </ul>
           </div>
         </div>
@@ -28,8 +31,11 @@
 <script setup>
 import { useRouter } from "vue-router";
 const router = useRouter();
-const locationbtn = () => {
+const home = () => {
   router.push("/");
+};
+const contact = async () => {
+  router.push("/contact");
 };
 </script>
 
