@@ -683,4 +683,9 @@ li {
 .imgcontain:hover .imgtit {
   display: inline-block;
 }
+@media (max-width: 400px){
+  .divisioncolOne{
+    padding: 20px 0!important;
+  }
+}
 </style>
