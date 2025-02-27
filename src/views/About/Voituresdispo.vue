@@ -44,10 +44,8 @@
             </li>
           </ul>
           <div class="d-flex action">
-            <a href="#" class="btn btn-primary">
-              <router-link class="nav-link col-white" to="/reserve"
-                >Réserver !</router-link
-              >
+            <a href="#" class="btn btn-primary" @click="reserve">
+              Réserver !
             </a>
           </div>
         </div>
@@ -97,6 +95,12 @@ const data = ref([
   },
 ]);
 const filteredData = ref(data.value);
+import { useRouter } from "vue-router";
+const router = useRouter();
+
+const reserve = async () => {
+  router.push("/reserve");
+};
 </script>
 <style scoped lang="scss">
 .item-1 .item-1-contents {
@@ -155,6 +159,7 @@ img {
 .btn-primary {
   background-color: #007bff;
   border: none;
+  padding: 12px 24px;
 }
 .rating {
   display: flex;
