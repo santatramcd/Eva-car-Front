@@ -57,7 +57,7 @@ h2 {
 .span-icone {
   width: 60px;
   height: 60px;
-  /* background: #f4f4f4; */
+  background: #f4f4f4;
   display: flex;
   align-content: center;
   flex-wrap: wrap;
