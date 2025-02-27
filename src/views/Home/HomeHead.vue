@@ -28,6 +28,8 @@
   width: 100%;
   min-height: 500px;
   /* padding: 120px 0 80px; */
+  position: relative;
+  z-index: 10;
 }
 .title-head {
   background-color: rgba(11, 11, 11, 0.529);

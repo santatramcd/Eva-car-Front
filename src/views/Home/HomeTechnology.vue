@@ -63,5 +63,6 @@ p {
 }
 .card {
   border: none !important;
+  background: transparent;
 }
 </style>

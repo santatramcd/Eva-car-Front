@@ -58,7 +58,7 @@ const slides = [
 </script>
 <style lang="scss" scoped>
 .divmarque {
-  background-color: #fff;
+  background-color: transparent;
   margin-top: 120px;
   margin-bottom: 80px;
 }
@@ -102,6 +102,7 @@ const slides = [
 }
 .card {
   border: none;
+  background-color: transparent;
 }
 
 </style>

@@ -101,7 +101,7 @@ const filteredData = ref(data.value);
 <style scoped lang="scss">
 .item-1 .item-1-contents {
   padding: 20px;
-  background: #fff;
+  background: transparent;
 }
 .item-1 .item-1-contents h3 {
   font-size: 18px;

@@ -133,6 +133,8 @@ export default {
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   z-index: 100;
+  position: relative;
+  z-index: 10;
 }
 label {
   min-width: 50px;

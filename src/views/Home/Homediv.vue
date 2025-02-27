@@ -82,5 +82,6 @@ h1 i {
 }
 .card {
   border: none;
+  background: transparent;
 }
 </style>
