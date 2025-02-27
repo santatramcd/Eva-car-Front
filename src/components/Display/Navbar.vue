@@ -262,7 +262,8 @@ onUnmounted(() => {
 }
 
 .hamburger-menu.active .line:nth-child(3) {
-  transform: translateY(-12.5px) rotate(-45deg);
+  // transform: translateY(-12.5px) rotate(-45deg);
+  transform: translateY(-12.5px) rotate(-225deg);
 }
 .navbar-toggler {
   border: none;
