@@ -144,6 +144,8 @@ const about = async () => {
 <style scoped lang="scss">
 .div-margin {
   margin-top: 120px;
+  position: relative;
+  z-index: 10;
 }
 /*** About Start ***/
 .video {

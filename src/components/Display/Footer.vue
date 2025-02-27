@@ -149,6 +149,8 @@ a {
 footer {
   background-color: #333;
   color: #fff;
+  position: relative;
+  z-index: 10;
 }
 .route-a {
   font-size: 13px;
