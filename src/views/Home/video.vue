@@ -145,7 +145,6 @@ const about = async () => {
 .div-margin {
   margin-top: 120px;
   position: relative;
-  z-index: 10;
 }
 /*** About Start ***/
 .video {
