@@ -1,22 +1,19 @@
 <template>
   <div>
     <div className="bg-linear">
-      <div className="blue">
-        <img
-          src="https://santatra-michado.vercel.app/assets/eclipse-red-KUx1m6La.webp"
-          alt="image"
-        />
-      </div>
       <div className="red">
-        <img
-          src="https://santatra-michado.vercel.app/assets/eclipse-blue-tXu57pkr.webp"
-          alt="image"
-        />
+        <img :src="Red" alt="image" />
+      </div>
+      <div className="blue">
+        <img :src="Blue" alt="image" />
       </div>
     </div>
   </div>
 </template>
-<script setup></script>
+<script setup>
+import Blue from "../../assets/eclipse-blue.webp";
+import Red from "../../assets/eclipse-red.webp";
+</script>
 <style scoped lang="scss">
 .bg-linear {
   opacity: 0.9;
@@ -30,28 +27,28 @@
   width: 100%;
   height: 100vh;
 }
-.bg-linear .red {
+.bg-linear .blue {
   left: -13%;
   top: 80px;
   height: 600px;
   width: 50%;
   position: absolute;
-  // background:red;
+  // background: blue;
 }
-.bg-linear .blue {
+.bg-linear .red {
   bottom: -80px;
   right: -13%;
   height: 600px;
   width: 50%;
   position: absolute;
-  // background: blue;
+  // background:red;
 }
 .bg-linear img {
   width: 700px;
 }
 @media (max-width: 400px) {
-  .bg-linear .red,
-  .bg-linear .blue {
+  .bg-linear .blue,
+  .bg-linear .red {
     width: 80%;
     top: 0px;
   }
