@@ -1,8 +1,8 @@
 <template>
-  <div class="container">
+  <div>
     <div class="nonloop-block-13 owl-carousel row">
       <div
-        class="col-lg-4 div-hover item-1"
+        class="col-lg-6 div-hover item-1"
         v-for="(item, index) in filteredData"
         :key="index"
       >
@@ -165,7 +165,7 @@ img {
   color: #007bff;
 }
 .col-white:hover,
-.col-white{
-    color: #fff;
+.col-white {
+  color: #fff;
 }
 </style>
