@@ -2,7 +2,7 @@
   <div>
     <HomeHead />
     <Homeslider />
-    <Bglinear/>
+    <Bglinear />
     <HomeDiv data-aos="fade-up" />
     <Video data-aos="fade-up" />
     <HomeCar data-aos="fade-up" />
@@ -12,7 +12,7 @@
     <Homelocat data-aos="fade-up" />
     <Homefaq />
     <Homeproduct data-aos="fade-up" />
-    <Voiture data-aos="fade-up"/>
+    <Voiture data-aos="fade-up" />
     <Homemarque data-aos="fade-up" />
   </div>
 </template>
@@ -30,7 +30,7 @@ import Homemarque from "./Homemarque.vue";
 import Homefaq from "./Homefaq.vue";
 import Video from "./video.vue";
 import Voiture from "./voiture.vue";
-import Bglinear from "./Bglinear.vue"
+import Bglinear from "./Bglinear.vue";
 AOS.init({
   offset: 400,
   duration: 1000,
