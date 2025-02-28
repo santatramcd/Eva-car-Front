@@ -364,11 +364,10 @@ header {
 }
 
 //
-@media (max-width: 1063px) {
+@media (max-width: 1195px) {
   .navbar-nav {
     width: 100% !important;
   }
-
   .navbar-brand {
     width: auto !important;
   }
