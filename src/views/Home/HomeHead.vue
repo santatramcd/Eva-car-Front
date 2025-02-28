@@ -53,6 +53,7 @@
 }
 .title-head p {
   font-size: 32px;
+  text-transform: capitalize;
 }
 @media (max-width: 765px) {
   .title-head h1 {
