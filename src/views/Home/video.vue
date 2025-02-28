@@ -297,6 +297,7 @@ const about = async () => {
 }
 .border-primary {
   border-color: #ffbf00 !important;
+  text-transform: capitalize;
 }
 .display-5 {
   font-weight: 600;
