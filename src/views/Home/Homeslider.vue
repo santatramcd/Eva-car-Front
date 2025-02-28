@@ -81,27 +81,13 @@
     </div>
   </div>
 </template>
-<script>
+<script setup>
 import { ref } from "vue";
-
-export default {
-  setup() {
-    // Liste des villes
-    const villes = ref([
-      "Antananarivo",
-      "Toamasina",
-      "Mahajanga",
-      "Fianarantsoa",
-    ]);
-
-    // Modèles de sélection pour ville de départ et retour
-    const selectedVilleDepart = ref("");
-    const selectedVilleRetour = ref("");
-
-    return { villes, selectedVilleDepart, selectedVilleRetour };
-  },
-};
+const villes = ref(["Antananarivo", "Toamasina", "Mahajanga", "Fianarantsoa"]);
+const selectedVilleDepart = ref("");
+const selectedVilleRetour = ref("");
 </script>
+
 <style scoped>
 .tit-form {
   /* text-align: center; */
@@ -121,7 +107,7 @@ export default {
   border: none;
 }
 .form-head-search select,
-.form-head-search input{
+.form-head-search input {
   background-color: #eee;
 }
 .form-head-search button {
@@ -207,8 +193,8 @@ button {
 }
 @media (max-width: 573px) {
   .cont-form-head {
-  padding: 35px 20px;
-  width: 90%;
-}
+    padding: 35px 20px;
+    width: 90%;
+  }
 }
 </style>
