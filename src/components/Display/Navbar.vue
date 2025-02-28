@@ -343,7 +343,7 @@ header {
   // background-color: #ffffff;
   // backdrop-filter: blur(10px);
   // -webkit-backdrop-filter: blur(10px);
-  // animation: slideInFromTop 0.5s ease-out forwards;
+  animation: slideInFromTop 0.5s ease-out forwards;
   background: rgba(255, 255, 255, 0.95);
   position: fixed;
   right: 0;
