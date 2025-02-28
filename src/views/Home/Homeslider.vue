@@ -117,7 +117,12 @@ export default {
   height: 50px;
   outline: none;
   padding: 0 10px;
-  border: 1px solid rgb(94, 91, 91);
+  /* border: 1px solid rgb(94, 91, 91); */
+  border: none;
+}
+.form-head-search select,
+.form-head-search input{
+  background-color: #eee;
 }
 .form-head-search button {
   border: none;
@@ -199,5 +204,11 @@ button {
   .cont-form-head {
     margin-top: -120px;
   }
+}
+@media (max-width: 573px) {
+  .cont-form-head {
+  padding: 35px 20px;
+  width: 90%;
+}
 }
 </style>

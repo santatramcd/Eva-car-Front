@@ -138,9 +138,9 @@
   border: 1px solid rgba(2, 1, 1, 0);
   border-radius: 0px;
   margin-top: 30px;
-  display: flex; /* S'assurer que le contenu s'étire */
-  flex-direction: column; /* Disposer le contenu verticalement */
-  justify-content: space-between; /* Équilibrer l'espacement */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   /* min-height: 100%; */
   box-sizing: border-box; /* Inclure les bordures et le padding */
   height: 100%;
