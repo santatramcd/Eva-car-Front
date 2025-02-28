@@ -65,7 +65,7 @@
 }
 @media (max-width: 375px) {
   .title-head {
-    margin: 10px 0;
+    margin: 40px 0;
   }
 }
 </style>
