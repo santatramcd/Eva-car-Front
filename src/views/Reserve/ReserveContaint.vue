@@ -1072,6 +1072,14 @@ label {
   border-radius: 8px;
   height: 150px;
 }
+input:focus,
+input:active,
+select:focus,
+select:active{
+  outline: none !important; /* Supprime le contour bleu */
+  box-shadow: none !important; /* Supprime l'ombre */
+  border: 1px solid #eee !important; 
+}
 
 .form-check-input {
   cursor: pointer;
