@@ -25,20 +25,23 @@
   background-position: center;
   /* background-color: red; */
   width: 100%;
-  width: 100%;
-  min-height: 500px;
+  /* min-height: 500px; */
+  min-height: 600px;
   /* padding: 120px 0 80px; */
   position: relative;
   z-index: 10;
 }
 .title-head {
   background-color: rgba(11, 11, 11, 0.529);
-  min-height: 320px;
-  padding: 10px 30px;
+  /* min-height: 320px; */
+  min-height: 350px;
+  /* padding: 10px 30px; */
+  padding: 30px;
   display: flex;
-  margin: 25px 0;
+  /* margin: 25px 0; */
+  margin: 70px 0;
   justify-content: flex-start;
-  align-content: center;
+  align-content: space-around;
   flex-wrap: wrap;
   color: #fff;
 }
