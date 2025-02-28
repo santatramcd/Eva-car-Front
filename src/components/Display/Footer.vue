@@ -13,7 +13,7 @@
             </a>
             <ul class="list-unstyled small text-muted">
               <li class="mb-2 text-justify">
-                {{$t("evacarfooter")}}
+                {{ $t("evacarfooter") }}
               </li>
             </ul>
           </div>
@@ -21,37 +21,23 @@
             <h5>MENU</h5>
             <ul class="list-unstyled">
               <li class="mb-2">
-                <a href="#"
-                  ><router-link class="route-a" to="/"
-                    >CAR RENTAL SEYCHELLES</router-link
-                  ></a
+                <a href="#" @click="home" class="route-a"
+                  >CAR RENTAL SEYCHELLES
+                </a>
+              </li>
+              <li class="mb-2">
+                <a href="#" @click="about" class="route-a">CARS AND PRICES</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" @click="work" class="route-a">FAQ</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" @click="cgv" class="route-a"
+                  >CGV et mentions légales</a
                 >
               </li>
               <li class="mb-2">
-                <a href="#"
-                  ><router-link class="route-a" to="/about"
-                    >CARS AND PRICES</router-link
-                  ></a
-                >
-              </li>
-              <li class="mb-2">
-                <a href="#"
-                  ><router-link class="route-a" to="/work">FAQ</router-link></a
-                >
-              </li>
-              <li class="mb-2">
-                <a href="#"
-                  ><router-link class="route-a" to="/cgv"
-                    >CGV et mentions légales</router-link
-                  ></a
-                >
-              </li>
-              <li class="mb-2">
-                <a href="#"
-                  ><router-link class="route-a" to="/contact"
-                    >CONTACT US</router-link
-                  ></a
-                >
+                <a href="#" @click="contact" class="route-a">CONTACT US</a>
               </li>
             </ul>
           </div>
@@ -98,15 +84,15 @@
         </div>
       </div>
     </footer>
-    <div 
-    class="div-fixed" 
-    :class="{ show: isVisible, hide: !isVisible }" 
-    @click="scrollToTop"
-  >
-    <a href="#">
-      <i class="bi bi-chevron-up"></i>
-    </a>
-  </div>
+    <div
+      class="div-fixed"
+      :class="{ show: isVisible, hide: !isVisible }"
+      @click="scrollToTop"
+    >
+      <a href="#">
+        <i class="bi bi-chevron-up"></i>
+      </a>
+    </div>
   </div>
 </template>
 <script setup>
@@ -132,6 +118,24 @@ onUnmounted(() => {
 // Fonction pour remonter en haut
 const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
+};
+import { useRouter } from "vue-router";
+const router = useRouter();
+
+const home = () => {
+  router.push("/");
+};
+const about = async () => {
+  router.push("/about");
+};
+const work = () => {
+  router.push("/work");
+};
+const contact = async () => {
+  router.push("/contact");
+};
+const cgv = async () => {
+  router.push("/cgv");
 };
 </script>
 <style scoped>
@@ -197,8 +201,8 @@ footer {
   transform: translateY(50px);
 }
 @media (max-width: 996px) {
-.div-fixed {
-  right: 30px;
-}
+  .div-fixed {
+    right: 30px;
+  }
 }
 </style>
