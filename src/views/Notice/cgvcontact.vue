@@ -3,7 +3,7 @@
     <div class="container divcont">
       <div class="row">
         <div class="col-md-4 mt-3">
-          <h2 class="title-header">Contact en Allemagne</h2>
+          <h2 class="title-header">Contact</h2>
           <ul>
             <li class="mt-3">Eva Car Rental</li>
             <li>Exerzierplatz 3a</li>
