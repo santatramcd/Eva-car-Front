@@ -147,6 +147,9 @@ a {
   text-decoration: none;
   color: #fff;
 }
+a:hover{
+  color: #fff;
+}
 .text-justify {
   text-align: justify;
 }
