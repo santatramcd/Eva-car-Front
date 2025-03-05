@@ -83,7 +83,7 @@
 </template>
 <script setup>
 import { ref } from "vue";
-const villes = ref(["Antananarivo", "Toamasina", "Mahajanga", "Fianarantsoa"]);
+const villes = ref(["Victoria", "Anse Royale", "Beau Vallon", "International Airport"]);
 const selectedVilleDepart = ref("");
 const selectedVilleRetour = ref("");
 </script>
