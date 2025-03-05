@@ -14,7 +14,7 @@
                   v-model="selectedVilleDepart"
                   id="ville-depart"
                 >
-                  <option value="">-- Choisir une ville --</option>
+                  <option value="">International Airport</option>
                   <option v-for="ville in villes" :key="ville" :value="ville">
                     {{ ville }}
                   </option>
@@ -33,7 +33,7 @@
                   v-model="selectedVilleRetour"
                   id="ville-retour"
                 >
-                  <option value="">-- Choisir une ville --</option>
+                  <option value="">International Airport</option>
                   <option v-for="ville in villes" :key="ville" :value="ville">
                     {{ ville }}
                   </option>
@@ -83,7 +83,7 @@
 </template>
 <script setup>
 import { ref } from "vue";
-const villes = ref(["Victoria", "Anse Royale", "Beau Vallon", "International Airport"]);
+const villes = ref(["Victoria", "Anse Royale", "Beau Vallon", "St. Louis"]);
 const selectedVilleDepart = ref("");
 const selectedVilleRetour = ref("");
 </script>
