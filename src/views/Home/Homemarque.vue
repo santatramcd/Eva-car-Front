@@ -67,7 +67,7 @@ const slides = [
   padding: 0px 50px;
 }
 .notmarq {
-  /* background-color: #74881c; */
+  // background-color: #74881c;
   padding: 20px 0px;
   font-size: 20px;
   color: #716d6e;
@@ -78,9 +78,10 @@ const slides = [
   border-radius: 10px;
   opacity: 0.5;
   filter: grayscale(100%);
-  // background-color: red;
+  background-color: #fff;
   flex-wrap: wrap;
   align-content: center;
+  justify-content: center;
 }
 .peg:hover {
   opacity: 1;
