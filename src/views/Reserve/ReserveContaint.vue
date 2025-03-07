@@ -11,11 +11,16 @@
                   ><i class="bi bi-exclamation-circle"></i
                 ></span>
                 <p class="paraToas">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Blanditiis, neque, est accusamus quod doloremque quae
-                  excepturi temporibus pariatur incidunt dolore impedit
-                  perferendis tenetur saepe quas itaque. Natus maxime ullam
-                  iste.
+                  Conseil: Transfert depuis l'aéroport pour seulement ~37 €/~40
+                  € (1 à 3½ personnes) ou ~62 € (4 à 9 personnes) par trajet. Ce
+                  transfert prend en charge uniquement vos passagers et
+                  vous-même, et vous conduit directement à l'endroit de votre
+                  choix. Ainsi, le chemin vers votre hôtel sera un veritable
+                  moment de détente après un vol fatigant. Vous pourrez
+                  peut-être même économiser une partie des frais de livraison si
+                  votre voiture doit vous être livrée à l'hôtel et non à
+                  l'aéroport. Si vous êtes intéressé par un transfert, veuillez
+                  le mentionner dans le champ «Souhaits particuliers».
                 </p>
                 <span class="icnX"
                   ><i class="bi bi-x" @click="handleClick"></i
@@ -81,7 +86,8 @@
           <div>
             <ol>
               <li>
-                pas encore habitué au concept de franchise?<a href="#"
+                pas encore habitué au concept de franchise?<a
+                  href="#"
                   class="addFranchise"
                 >
                   Pour en savoir plus, cliquez ici</a
@@ -689,7 +695,6 @@ const dataAssurance = [
   },
 ];
 
-
 const boxShadows = ref([
   "0 10px 20px rgba(0, 0, 0, 0.3), 0 30px 50px rgba(0, 0, 0, 0.5)",
   "none",
@@ -1071,10 +1076,10 @@ label {
 input:focus,
 input:active,
 select:focus,
-select:active{
+select:active {
   outline: none !important; /* Supprime le contour bleu */
   box-shadow: none !important; /* Supprime l'ombre */
-  border: 1px solid #eee !important; 
+  border: 1px solid #eee !important;
 }
 
 .form-check-input {
@@ -1169,7 +1174,7 @@ select:active{
   cursor: pointer;
 }
 @media (max-width: 400px) {
-  .divpar{
+  .divpar {
     margin-top: 50px;
   }
 }
