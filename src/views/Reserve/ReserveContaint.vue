@@ -81,8 +81,7 @@
           <div>
             <ol>
               <li>
-                pas encore habitué au concept de franchise?<a
-                  @click="franchiseBtn"
+                pas encore habitué au concept de franchise?<a href="#"
                   class="addFranchise"
                 >
                   Pour en savoir plus, cliquez ici</a
@@ -690,9 +689,6 @@ const dataAssurance = [
   },
 ];
 
-const franchiseBtn = () => {
-  router.push("/franchise");
-};
 
 const boxShadows = ref([
   "0 10px 20px rgba(0, 0, 0, 0.3), 0 30px 50px rgba(0, 0, 0, 0.5)",
